@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import AutoApplyForm from './components/AutoApplyForm';
 
 function App() {
     const [profile, setProfile] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/profiles/65a123456789')
+        axios.get('http://localhost:8000/api/profiles/65a123456789')
             .then((response) => setProfile(response.data))
             .catch((error) => console.error('Error fetching profile:', error));
     }, []);
@@ -22,6 +23,7 @@ function App() {
             ) : (
                 <p>Loading profile...</p>
             )}
+            <AutoApplyForm/>
         </div>
     );
 }

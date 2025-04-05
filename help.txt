@@ -1,0 +1,3 @@
+netstat -ano | findstr :3000
+tskill typeyourPIDhere 
+https://careers.adobe.com/us/en/apply?jobSeqNo=ADOBUSR154638EXTERNALENUS&step=1&stepname=personalInformation

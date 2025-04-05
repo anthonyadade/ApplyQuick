@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import AutoApplyForm from './components/AutoApplyForm';
+import EditProfileForm from './components/EditProfile';
 
 function App() {
     const [profile, setProfile] = useState(null);
 
-    useEffect(() => {
-        axios.get('http://localhost:8000/api/profiles/65a123456789')
-            .then((response) => setProfile(response.data))
-            .catch((error) => console.error('Error fetching profile:', error));
-    }, []);
+    // useEffect(() => {
+    //     axios.get('http://localhost:8000/api/profiles/65a123456789')
+    //         .then((response) => setProfile(response.data))
+    //         .catch((error) => console.error('Error fetching profile:', error));
+    // }, []);
 
     return (
         <div>
             <h1>Job Application Dashboard</h1>
+            <EditProfileForm/>
             {profile ? (
                 <div>
                     <h2>{profile.name}</h2>

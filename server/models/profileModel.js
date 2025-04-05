@@ -26,12 +26,15 @@ const mongoose = require('mongoose');
  *   - `end`: The end date of the job.
  *   - `description`: A description of the job.
  * - `resume`: The file path to the resume.
+ * - `linkedIn`: The user's LinkedIn.
  * - `work_authorization`: Whether the user has work authorization.
  * - `require_sponsorship`: Whether the user requires sponsorship.
  * - `gender`: The gender of the user.
+ * - `hispanic`: Whether the user identifies as Hispanic.
  * - `race`: The race of the user.
- * - `veteran`: The veteran status of the user, which can be 'yes', 'not protected', or 'no'.
- */
+ * - `veteran`: The veteran status of the user.
+ *  - `disability`: The disability status of the user.
+*/
 const profileSchema = new mongoose.Schema({
         name: String,
         email: String,
@@ -56,11 +59,14 @@ const profileSchema = new mongoose.Schema({
             description: String,
         }],
         resume: String, // filepath
+        linkedIn: String,
         work_authorization: Boolean,
         require_sponsorship: Boolean,
         gender: String,
+        hispanic: String,
         race: String,
-        veteran: {enum: ['yes', 'not protected', 'no']}
+        veteran: String,
+        disability: String,
 });
 
 module.exports = mongoose.model('Profile', profileSchema);

@@ -5,28 +5,57 @@ async function autoApply(jobLink, profileData) {
         headless: false,  // Keep the browser visible for manual input, maybe change
         defaultViewport: null
     });
-    
-    // const actions = [
-    //     page.type('input[label*="First"][aria-label*="First"]', profileData.firstName || '').catch(error => console.error('First Name: ', error.message)),
-    //     page.type('input[label*="Last"][aria-label*="Last"]', profileData.lastName || '').catch(error => console.error('Last Name: ', error.message)),
-    //     page.type('input[type="email"]', profileData.email || '').catch(error => console.error('Email: ', error.message)),
-    //     page.select('select[id*="device"]', profileData.deviceType).catch(error => console.error('Device Type: ', error.message)),
-    //     page.type('input[label*="Phone"][aria-label*="Phone"]', profileData.phone || '').catch(error => console.error('Phone Number: ', error.message))
-    // ];
+
+    const dropdown = async (identifier, info) => {
+        // Click on the input field to focus
+        await page.click(`input[id*="${identifier}"]`).catch(error => console.error(error.message));
+
+        // Type the school name
+        await page.type(`input[id*="${identifier}"]`, info).catch(error => console.error(error.message));;
+
+        // Wait for the dropdown options to appear
+        await page.waitForSelector('[role="option"]').catch(error => console.error(error.message));; // Adjust the selector if needed
+
+        // Select the first matching option (or navigate if necessary)
+        //await page.keyboard.press('ArrowDown').catch(error => console.error('School: ', error.message)); // Navigate to the first option
+        await page.keyboard.press('Enter').catch(error => console.error(error.message)); // Select the option
+        
+    }
 
     const page = await browser.newPage();
     await page.goto(jobLink, { waitUntil: 'networkidle2' });
 
     try {
         // Auto-fill known details
-        //await Promise.allSettled(actions);
-        await page.type('input[label*="First"][aria-label*="First"]', profileData.firstName || '').catch(error => console.error('First Name: ', error.message)),
-        await page.type('input[label*="Last"][aria-label*="Last"]', profileData.lastName || '').catch(error => console.error('Last Name: ', error.message)),
-        await page.type('input[type="email"]', profileData.email || '').catch(error => console.error('Email: ', error.message)),
-        await page.select('select[id*="device"]', profileData.deviceType).catch(error => console.error('Device Type: ', error.message)),
-        await page.type('input[label*="Phone"][aria-label*="Phone"]', profileData.phone || '').catch(error => console.error('Phone Number: ', error.message))
-        
-        await page.waitForTimeout(1000); // Wait for 500ms
+        await page.type('input[aria-label*="First"]', profileData.firstName || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="Last"]', profileData.lastName || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="Email"]', profileData.email || '').catch(error => console.error(error.message));
+        await page.select('select[id*="device"]', profileData.deviceType).catch(error => console.error(error.message));
+        await page.type('input[aria-label*="Phone"]', profileData.phone || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="title"]', profileData.phone || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="LinkedIn"]', profileData.linkedIn || '').catch(error => console.error(error.message));
+        // Iterate through the education section
+        for (const item of profileData.education) {
+            await dropdown('school', item.school);
+            await dropdown('degree', item.degree);
+            await dropdown('discipline', item.field);
+            //await dropdown('start-month', item.field);
+            //await dropdown('end-month', item.field);
+            await page.type('input[id*="start-year"]', item.start.toString() || '').catch(error => console.error(error.message));
+            await page.type('input[id*="end-year"]', item.end.toString() || '').catch(error => console.error(error.message));
+        }
+
+        const resume = await page.waitForSelector('input[type=file]').catch(error => console.error(error.message));
+        await resume.uploadFile(profileData.resume).catch(error => console.error(error.message));
+        await dropdown('gender', profileData.gender);
+        await dropdown('hispanic', profileData.hispanic);
+        await dropdown('race', profileData.race);
+        await dropdown('veteran', profileData.veteran);
+        await dropdown('disability', profileData.disability);
+        //await page.uploadFile('input[type=file]', profileData.resume || '').catch(error => console.error('Resume: ', error.message))
+        //await page.up
+        //await page.click('button[type="submit"]');
+        //await page.waitForTimeout(1000); // Wait for 500ms
         
         // Resume with manual input for unknown fields
         const unknownFields = await page.$$('input:not([value]):not([name="fullName"]):not([name="email"]):not([name="phone"])');

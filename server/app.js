@@ -14,7 +14,7 @@ app.use(cors({ origin: 'http://localhost:3000' }));
 
 
 // Routes
-app.use('/api/profiles', profileRoutes);
+app.use('/api/profile', profileRoutes);
 app.use('/api/jobs', jobRoutes);
 
 // Database Connection

@@ -38,3 +38,7 @@ npm start
 2. Puppeteer fills out what it can.
 3. For anything it doesn’t recognize, it pauses and shows the form.
 4. You finish and submit.
+
+## 📸 Demo
+
+![ApplyQuick demo](client/public/autoapplydemo.gif)

@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
  * - `firstName`: The first name of the user.
  * - `lastName`: The last name of the user.
  * - `email`: The email address of the user.
+ * - `deviceType`: The the type of phone of the user.
  * - `phone`: The phone number of the user.
  * - `address`: The address of the user.
  * - `education`: An array of education records, each containing:
@@ -40,6 +41,7 @@ const profileSchema = new mongoose.Schema({
         firstName: String,
         lastName: String,
         email: String,
+        deviceType: String,
         phone: String,
         address: String,
         education: [{

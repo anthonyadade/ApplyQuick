@@ -43,6 +43,9 @@ async function autoApply(jobLink, profile) {
             //await dropdown('end-month', item.field);
             await page.type('input[id*="start-year"]', item.start.toString() || '').catch(error => console.error(error.message));
             await page.type('input[id*="end-year"]', item.end.toString() || '').catch(error => console.error(error.message));
+            if (item !== profile.education[-1]) {
+                await page.click('button[class*="add-another"]');
+            }
         }
 
         const resume = await page.waitForSelector('input[type=file]').catch(error => console.error(error.message));

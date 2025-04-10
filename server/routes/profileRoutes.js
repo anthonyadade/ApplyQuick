@@ -39,6 +39,7 @@ router.get('/', async (req, res) => {
                 firstName: '',
                 lastName: '',
                 email: '',
+                deviceType: '',
                 phone: '',
                 address: '',
                 education: [],

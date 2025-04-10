@@ -44,6 +44,13 @@ function EditProfileForm({ onSubmitSuccess }) {
         });
     };
 
+    const handleRemoveLast = (type) => {
+        setProfile({
+            ...profile,
+            [type]: profile[type].slice(0, -1),
+        });
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -88,7 +95,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                 <input type="text" name="address" value={profile.address} onChange={handleChange} />
             </label>
 
-            {/* <h3>Education</h3>
+            <h3>Education</h3>
             {profile.education.map((edu, index) => (
                 <div key={index}>
                     <label>
@@ -142,7 +149,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                 </div>
             ))}
             <button type="button" onClick={handleAddEducation}>Add Education</button>
-
+            <button type="button" onClick={() => handleRemoveLast('education')}>Remove Education</button>
             <h3>Experience</h3>
             {profile.experience.map((exp, index) => (
                 <div key={index}>
@@ -182,7 +189,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                         Start Date:
                         <input
                             type="date"
-                            value={exp.start}
+                            value={new Date(exp.start)}
                             onChange={(e) => handleExperienceChange(index, 'start', e.target.value)}
                         />
                     </label>
@@ -190,7 +197,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                         End Date:
                         <input
                             type="date"
-                            value={exp.end}
+                            value={new Date(exp.end)}
                             onChange={(e) => handleExperienceChange(index, 'end', e.target.value)}
                         />
                     </label>
@@ -204,8 +211,8 @@ function EditProfileForm({ onSubmitSuccess }) {
                 </div>
             ))}
             <button type="button" onClick={handleAddExperience}>Add Experience</button>
-
-            <h3>Other Details</h3>
+            <button type="button" onClick={() => handleRemoveLast('experience')}>Remove Experience</button>
+            {/* <h3>Other Details</h3>
             <label>
                 Resume:
                 <input type="text" name="resume" value={profile.resume} onChange={handleChange} />

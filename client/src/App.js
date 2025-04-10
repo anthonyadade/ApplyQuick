@@ -4,19 +4,16 @@ import AutoApplyForm from './components/AutoApplyForm';
 import EditProfileForm from './components/EditProfile';
 
 function App() {
-    const [profile, setProfile] = useState(null);
-
-    // useEffect(() => {
-    //     axios.get('http://localhost:8000/api/profiles/65a123456789')
-    //         .then((response) => setProfile(response.data))
-    //         .catch((error) => console.error('Error fetching profile:', error));
-    // }, []);
+    //const [profile, setProfile] = useState(null);
+    const handleProfileUpdate = () => {
+        alert('Successfully saved');
+    }
 
     return (
         <div>
             <h1>Job Application Dashboard</h1>
-            <EditProfileForm/>
-            {profile ? (
+            <EditProfileForm onSubmitSuccess={handleProfileUpdate}/>
+            {/* {profile ? (
                 <div>
                     <h2>{profile.name}</h2>
                     <p>{profile.email}</p>
@@ -24,7 +21,8 @@ function App() {
                 </div>
             ) : (
                 <p>Loading profile...</p>
-            )}
+            )} */}
+            <br/>
             <AutoApplyForm/>
         </div>
     );

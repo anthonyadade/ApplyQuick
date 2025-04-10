@@ -1,41 +1,16 @@
 import React, { useState, useEffect } from 'react';
-
+import useProfile from '../hooks/useProfile';
 const PROFILE_API_URL = `${process.env.REACT_APP_SERVER_URL}/api/profile`;
 
 function EditProfileForm({ onSubmitSuccess }) {
-    const [profile, setProfile] = useState(null); // Initially null to indicate loading
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    // const [profile, setProfile] = useState(null); // Initially null to indicate loading
+    // const [loading, setLoading] = useState(true);
+    // const [error, setError] = useState(null);
+    const {profile, setProfile, error, setError} = useProfile();
 
     // Fetch profile data from the backend
-    useEffect(() => {
-        const fetchProfile = async () => {
-            try {
-                const response = await fetch(`${PROFILE_API_URL}/`);
-                console.log(response);
-                if (!response.ok) {
-                    // Attempt to parse the error message from the response body
-                    let errorMessage = 'Failed to fetch profile';
-                    try {
-                        const errorData = await response.json();
-                        errorMessage = errorData.error || errorMessage;
-                    } catch (jsonError) {
-                        // If response is not JSON, fallback to generic error
-                        errorMessage = `HTTP Error: ${response.status}`;
-                    }
-                    throw new Error(errorMessage);
-                }
-                const data = await response.json();
-                setProfile(data);
-                setLoading(false);
-            } catch (err) {
-                setError(err.message);
-                setLoading(false);
-            }
-        };
-
-        fetchProfile();
-    });
+    // useEffect(() => {
+    // });
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -84,16 +59,21 @@ function EditProfileForm({ onSubmitSuccess }) {
             setError(err.message);
         }
     };
-
-    if (loading) return <p>Loading...</p>;
+    
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <form onSubmit={handleSubmit}>
+        <>
+        {!profile ? <p>Loading...</p> :
+            <form onSubmit={handleSubmit}>
             <h2>Edit Profile</h2>
             <label>
-                Name:
-                <input type="text" name="name" value={profile.name} onChange={handleChange} />
+                First Name:
+                <input type="text" name="firstName" value={profile.firstName} onChange={handleChange} />
+            </label>
+            <label>
+                Last Name:
+                <input type="text" name="lastName" value={profile.lastName} onChange={handleChange} />
             </label>
             <label>
                 Email:
@@ -108,7 +88,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                 <input type="text" name="address" value={profile.address} onChange={handleChange} />
             </label>
 
-            <h3>Education</h3>
+            {/* <h3>Education</h3>
             {profile.education.map((edu, index) => (
                 <div key={index}>
                     <label>
@@ -271,10 +251,12 @@ function EditProfileForm({ onSubmitSuccess }) {
             <label>
                 Disability:
                 <input type="text" name="disability" value={profile.disability} onChange={handleChange} />
-            </label>
+            </label> */}
 
             <button type="submit">Save Profile</button>
         </form>
+        }
+        </>
     );
 }
 

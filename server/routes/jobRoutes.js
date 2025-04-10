@@ -39,9 +39,9 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/auto-apply', async (req, res) => {
-    const { jobLink, profileData } = req.body;
+    const { jobLink, profile } = req.body;
 
-    if (!jobLink || !profileData) {
+    if (!jobLink || !profile) {
         return res.status(400).json({ error: 'Job link and profile data are required' });
     }
 
@@ -50,7 +50,7 @@ router.post('/auto-apply', async (req, res) => {
         // if ('error' in myRes) {
         //     throw new Error(myRes.error);
         // }
-        await autoApply(jobLink, profileData);
+        await autoApply(jobLink, profile);
         res.json({ success: true, message: 'Automation started successfully.' });
     } catch (error) {
         res.status(500).json({ error: 'Failed to start automation.' });

@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
  *
  * This schema defines the structure for storing a profile in the database.
  * A profile includes the following fields:
- * - `name`: The name of the user.
+ * - `firstName`: The first name of the user.
+ * - `lastName`: The last name of the user.
  * - `email`: The email address of the user.
  * - `phone`: The phone number of the user.
  * - `address`: The address of the user.
@@ -36,7 +37,8 @@ const mongoose = require('mongoose');
  *  - `disability`: The disability status of the user.
 */
 const profileSchema = new mongoose.Schema({
-        name: String,
+        firstName: String,
+        lastName: String,
         email: String,
         phone: String,
         address: String,

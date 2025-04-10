@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-async function autoApply(jobLink, profileData) {
+async function autoApply(jobLink, profile) {
     const browser = await puppeteer.launch({
         headless: false,  // Keep the browser visible for manual input, maybe change
         defaultViewport: null
@@ -27,15 +27,15 @@ async function autoApply(jobLink, profileData) {
 
     try {
         // Auto-fill known details
-        await page.type('input[aria-label*="First"]', profileData.firstName || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="Last"]', profileData.lastName || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="Email"]', profileData.email || '').catch(error => console.error(error.message));
-        await page.select('select[id*="device"]', profileData.deviceType).catch(error => console.error(error.message));
-        await page.type('input[aria-label*="Phone"]', profileData.phone || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="title"]', profileData.phone || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="LinkedIn"]', profileData.linkedIn || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="First"]', profile.firstName || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="Last"]', profile.lastName || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="Email"]', profile.email || '').catch(error => console.error(error.message));
+        await page.select('select[id*="device"]', profile.deviceType).catch(error => console.error(error.message));
+        await page.type('input[aria-label*="Phone"]', profile.phone || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="title"]', profile.phone || '').catch(error => console.error(error.message));
+        await page.type('input[aria-label*="LinkedIn"]', profile.linkedIn || '').catch(error => console.error(error.message));
         // Iterate through the education section
-        for (const item of profileData.education) {
+        for (const item of profile.education) {
             await dropdown('school', item.school);
             await dropdown('degree', item.degree);
             await dropdown('discipline', item.field);
@@ -46,13 +46,13 @@ async function autoApply(jobLink, profileData) {
         }
 
         const resume = await page.waitForSelector('input[type=file]').catch(error => console.error(error.message));
-        await resume.uploadFile(profileData.resume).catch(error => console.error(error.message));
-        await dropdown('gender', profileData.gender);
-        await dropdown('hispanic', profileData.hispanic);
-        await dropdown('race', profileData.race);
-        await dropdown('veteran', profileData.veteran);
-        await dropdown('disability', profileData.disability);
-        //await page.uploadFile('input[type=file]', profileData.resume || '').catch(error => console.error('Resume: ', error.message))
+        await resume.uploadFile(profile.resume).catch(error => console.error(error.message));
+        await dropdown('gender', profile.gender);
+        await dropdown('hispanic', profile.hispanic);
+        await dropdown('race', profile.race);
+        await dropdown('veteran', profile.veteran);
+        await dropdown('disability', profile.disability);
+        //await page.uploadFile('input[type=file]', profile.resume || '').catch(error => console.error('Resume: ', error.message))
         //await page.up
         //await page.click('button[type="submit"]');
         //await page.waitForTimeout(1000); // Wait for 500ms

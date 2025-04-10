@@ -36,7 +36,8 @@ router.get('/', async (req, res) => {
         if (!profile) {
             // Define default values for the profile
             const defaultProfile = {
-                name: '',
+                firstName: '',
+                lastName: '',
                 email: '',
                 phone: '',
                 address: '',

@@ -7,10 +7,36 @@ function EditProfileForm({ onSubmitSuccess }) {
     // const [loading, setLoading] = useState(true);
     // const [error, setError] = useState(null);
     const {profile, setProfile, error, setError} = useProfile();
-
+    const [firstLoad, setFirstLoad] = useState(true);
     // Fetch profile data from the backend
     // useEffect(() => {
     // });
+
+    const convertMongoDateToJSDate = (mongoDate) => {
+        const date = new Date(mongoDate);
+        return date.toISOString().split('T')[0]; // Format as YYYY-MM-DD for date input fields
+    };
+
+    // Example usage: Convert date fields in profile data
+    useEffect(() => {
+        if (firstLoad && profile) {
+            const updatedProfile = {
+                ...profile,
+                education: profile.education.map(edu => ({
+                    ...edu,
+                    start: edu.start ? convertMongoDateToJSDate(edu.start) : '',
+                    end: edu.end ? convertMongoDateToJSDate(edu.end) : '',
+                })),
+                experience: profile.experience.map(exp => ({
+                    ...exp,
+                    start: exp.start ? convertMongoDateToJSDate(exp.start) : '',
+                    end: exp.end ? convertMongoDateToJSDate(exp.end) : '',
+                })),
+            };
+            setProfile(updatedProfile);
+            setFirstLoad(false);
+        }
+    }, [profile]);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -189,7 +215,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                         Start Date:
                         <input
                             type="date"
-                            value={new Date(exp.start)}
+                            value={exp.start}
                             onChange={(e) => handleExperienceChange(index, 'start', e.target.value)}
                         />
                     </label>
@@ -197,7 +223,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                         End Date:
                         <input
                             type="date"
-                            value={new Date(exp.end)}
+                            value={exp.end}
                             onChange={(e) => handleExperienceChange(index, 'end', e.target.value)}
                         />
                     </label>

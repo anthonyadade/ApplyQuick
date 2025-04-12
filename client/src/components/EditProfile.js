@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useProfile from '../hooks/useProfile';
+import Dropdown from './Dropdown';
 const PROFILE_API_URL = `${process.env.REACT_APP_SERVER_URL}/api/profile`;
 
 function EditProfileForm({ onSubmitSuccess }) {
@@ -22,11 +23,6 @@ function EditProfileForm({ onSubmitSuccess }) {
         if (firstLoad && profile) {
             const updatedProfile = {
                 ...profile,
-                education: profile.education.map(edu => ({
-                    ...edu,
-                    start: edu.start ? convertMongoDateToJSDate(edu.start) : '',
-                    end: edu.end ? convertMongoDateToJSDate(edu.end) : '',
-                })),
                 experience: profile.experience.map(exp => ({
                     ...exp,
                     start: exp.start ? convertMongoDateToJSDate(exp.start) : '',
@@ -238,9 +234,9 @@ function EditProfileForm({ onSubmitSuccess }) {
             ))}
             <button type="button" onClick={handleAddExperience}>Add Experience</button>
             <button type="button" onClick={() => handleRemoveLast('experience')}>Remove Experience</button>
-            {/* <h3>Other Details</h3>
+            <h3>Other Details</h3>
             <label>
-                Resume:
+                Resume Filepath:
                 <input type="text" name="resume" value={profile.resume} onChange={handleChange} />
             </label>
             <label>
@@ -265,11 +261,17 @@ function EditProfileForm({ onSubmitSuccess }) {
                     onChange={handleChange}
                 />
             </label>
-            <label>
+            {/* <label>
                 Gender:
                 <input type="text" name="gender" value={profile.gender} onChange={handleChange} />
-            </label>
-            <label>
+            </label> */}
+            <Dropdown label={'Gender'} name={'gender'} options={['Male', 'Female', 'Prefer Not To Say']}  value={profile.gender} onChange={handleChange}/>
+            <Dropdown label={'Hispanic'} name={'hispanic'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.hispanic} onChange={handleChange}/>
+            <Dropdown label={'Race'} name={'race'} options={['American Indian or Alaskan Native', 'Asian', 'Black or African American', 'White',
+                'Native Hawaiian or Other Pacific Islander', 'Two or More Races', 'Prefer Not To Say']}  value={profile.race} onChange={handleChange}/>
+            <Dropdown label={'Veteran'} name={'veteran'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.veteran} onChange={handleChange}/>
+            <Dropdown label={'Disability'} name={'disability'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.disability} onChange={handleChange}/>
+            {/* <label>
                 Hispanic:
                 <input type="text" name="hispanic" value={profile.hispanic} onChange={handleChange} />
             </label>

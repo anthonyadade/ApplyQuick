@@ -4,14 +4,8 @@ import Dropdown from './Dropdown';
 const PROFILE_API_URL = `${process.env.REACT_APP_SERVER_URL}/api/profile`;
 
 function EditProfileForm({ onSubmitSuccess }) {
-    // const [profile, setProfile] = useState(null); // Initially null to indicate loading
-    // const [loading, setLoading] = useState(true);
-    // const [error, setError] = useState(null);
     const {profile, setProfile, error, setError} = useProfile();
     const [firstLoad, setFirstLoad] = useState(true);
-    // Fetch profile data from the backend
-    // useEffect(() => {
-    // });
 
     const convertMongoDateToJSDate = (mongoDate) => {
         const date = new Date(mongoDate);
@@ -267,32 +261,12 @@ function EditProfileForm({ onSubmitSuccess }) {
                     onChange={handleChange}
                 />
             </label>
-            {/* <label>
-                Gender:
-                <input type="text" name="gender" value={profile.gender} onChange={handleChange} />
-            </label> */}
             <Dropdown label={'Gender'} name={'gender'} options={['Male', 'Female', 'Prefer Not To Say']}  value={profile.gender} onChange={handleChange}/>
             <Dropdown label={'Hispanic'} name={'hispanic'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.hispanic} onChange={handleChange}/>
             <Dropdown label={'Race'} name={'race'} options={['American Indian or Alaskan Native', 'Asian', 'Black or African American', 'White',
                 'Native Hawaiian or Other Pacific Islander', 'Two or More Races', 'Prefer Not To Say']}  value={profile.race} onChange={handleChange}/>
             <Dropdown label={'Veteran'} name={'veteran'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.veteran} onChange={handleChange}/>
             <Dropdown label={'Disability'} name={'disability'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.disability} onChange={handleChange}/>
-            {/* <label>
-                Hispanic:
-                <input type="text" name="hispanic" value={profile.hispanic} onChange={handleChange} />
-            </label>
-            <label>
-                Race:
-                <input type="text" name="race" value={profile.race} onChange={handleChange} />
-            </label>
-            <label>
-                Veteran:
-                <input type="text" name="veteran" value={profile.veteran} onChange={handleChange} />
-            </label>
-            <label>
-                Disability:
-                <input type="text" name="disability" value={profile.disability} onChange={handleChange} />
-            </label> */}
 
             <button type="submit">Save Profile</button>
         </form>

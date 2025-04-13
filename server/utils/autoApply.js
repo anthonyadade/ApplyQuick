@@ -59,18 +59,6 @@ async function autoApply(jobLink, profile) {
                 await page.click('button[class*="add-another"]');
             }
         }
-        // for (const item of profile.education) {
-        //     await dropdown('school', item.school);
-        //     await dropdown('degree', item.degree);
-        //     await dropdown('discipline', item.field);
-        //     //await dropdown('start-month', item.field);
-        //     //await dropdown('end-month', item.field);
-        //     await page.type('input[id*="start-year"]', item.start.toString() || '').catch(error => console.error(error.message));
-        //     await page.type('input[id*="end-year"]', item.end.toString() || '').catch(error => console.error(error.message));
-        //     if (item !== profile.education.at(-1)) {
-        //         await page.click('button[class*="add-another"]');
-        //     }
-        // }
 
         const resume = await page.waitForSelector('input[type=file]').catch(error => console.error(error.message));
         await resume.uploadFile(profile.resume).catch(error => console.error(error.message));
@@ -79,10 +67,6 @@ async function autoApply(jobLink, profile) {
         await dropdown('race', profile.race);
         await dropdown('veteran', profile.veteran);
         await dropdown('disability', profile.disability);
-        //await page.uploadFile('input[type=file]', profile.resume || '').catch(error => console.error('Resume: ', error.message))
-        //await page.up
-        //await page.click('button[type="submit"]');
-        //await page.waitForTimeout(1000); // Wait for 500ms
         
         // Resume with manual input for unknown fields
         const unknownFields = await page.$$('input:not([value]):not([name="fullName"]):not([name="email"]):not([name="phone"])');

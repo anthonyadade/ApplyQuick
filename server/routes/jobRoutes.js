@@ -46,10 +46,6 @@ router.post('/auto-apply', async (req, res) => {
     }
 
     try {
-        // const myRes = await autoApply(jobLink, profileData);
-        // if ('error' in myRes) {
-        //     throw new Error(myRes.error);
-        // }
         await autoApply(jobLink, profile);
         res.json({ success: true, message: 'Automation started successfully.' });
     } catch (error) {

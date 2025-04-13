@@ -22,6 +22,17 @@ async function autoApply(jobLink, profile) {
         
     }
 
+    const getMonthName = (mongoDate) => {
+        console.log(mongoDate);
+        const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        const monthNum = parseInt(mongoDate.split('-')[1], 10);
+        console.log(monthNum);
+        return months[monthNum - 1] || "Invalid month"; // Subtract 1 because arrays are zero-indexed
+    };
+
     const page = await browser.newPage();
     await page.goto(jobLink, { waitUntil: 'networkidle2' });
 
@@ -35,18 +46,31 @@ async function autoApply(jobLink, profile) {
         await page.type('input[aria-label*="title"]', profile.phone || '').catch(error => console.error(error.message));
         await page.type('input[aria-label*="LinkedIn"]', profile.linkedIn || '').catch(error => console.error(error.message));
         // Iterate through the education section
-        for (const item of profile.education) {
-            await dropdown('school', item.school);
-            await dropdown('degree', item.degree);
-            await dropdown('discipline', item.field);
-            //await dropdown('start-month', item.field);
-            //await dropdown('end-month', item.field);
-            await page.type('input[id*="start-year"]', item.start.toString() || '').catch(error => console.error(error.message));
-            await page.type('input[id*="end-year"]', item.end.toString() || '').catch(error => console.error(error.message));
-            if (item !== profile.education[-1]) {
+        const edu = profile.education;
+        for (let i=0; i<edu.length; i++) {
+            await dropdown('school--'+i, edu[i].school);
+            await dropdown('degree--'+i, edu[i].degree);
+            await dropdown('discipline--'+i, edu[i].field);
+            await dropdown('start-month--'+i, getMonthName(edu[i].start));
+            await dropdown('end-month--'+i, getMonthName(edu[i].end));
+            await page.type(`input[id*="start-year--${i}"]`, edu[i].start.slice(0, 4) || '').catch(error => console.error(error.message));
+            await page.type(`input[id*="end-year--${i}"]`, edu[i].end.slice(0, 4) || '').catch(error => console.error(error.message));
+            if (i+1 !== edu.length) {
                 await page.click('button[class*="add-another"]');
             }
         }
+        // for (const item of profile.education) {
+        //     await dropdown('school', item.school);
+        //     await dropdown('degree', item.degree);
+        //     await dropdown('discipline', item.field);
+        //     //await dropdown('start-month', item.field);
+        //     //await dropdown('end-month', item.field);
+        //     await page.type('input[id*="start-year"]', item.start.toString() || '').catch(error => console.error(error.message));
+        //     await page.type('input[id*="end-year"]', item.end.toString() || '').catch(error => console.error(error.message));
+        //     if (item !== profile.education.at(-1)) {
+        //         await page.click('button[class*="add-another"]');
+        //     }
+        // }
 
         const resume = await page.waitForSelector('input[type=file]').catch(error => console.error(error.message));
         await resume.uploadFile(profile.resume).catch(error => console.error(error.message));
@@ -68,7 +92,7 @@ async function autoApply(jobLink, profile) {
             await page.evaluate(() => alert('Please fill in the remaining fields and click "Submit" manually.'));
         } else {
             console.log('✅ All known details filled. Submitting...');
-            await page.click('button[type="submit"]');
+            //await page.click('button[type="submit"]');
         }
 
     } catch (error) {

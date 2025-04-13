@@ -21,12 +21,18 @@ function EditProfileForm({ onSubmitSuccess }) {
     // Example usage: Convert date fields in profile data
     useEffect(() => {
         if (firstLoad && profile) {
+            console.log(profile.education[0].start);
             const updatedProfile = {
                 ...profile,
                 experience: profile.experience.map(exp => ({
                     ...exp,
                     start: exp.start ? convertMongoDateToJSDate(exp.start) : '',
                     end: exp.end ? convertMongoDateToJSDate(exp.end) : '',
+                })),
+                education: profile.education.map(edu => ({
+                    ...edu,
+                    start: edu.start ? convertMongoDateToJSDate(edu.start) : '',
+                    end: edu.end ? convertMongoDateToJSDate(edu.end) : '',
                 })),
             };
             setProfile(updatedProfile);
@@ -153,17 +159,17 @@ function EditProfileForm({ onSubmitSuccess }) {
                         />
                     </label>
                     <label>
-                        Start Year:
+                        Start Date:
                         <input
-                            type="number"
+                            type="date"
                             value={edu.start}
                             onChange={(e) => handleEducationChange(index, 'start', e.target.value)}
                         />
                     </label>
                     <label>
-                        End Year:
+                        End Date:
                         <input
-                            type="number"
+                            type="date"
                             value={edu.end}
                             onChange={(e) => handleEducationChange(index, 'end', e.target.value)}
                         />

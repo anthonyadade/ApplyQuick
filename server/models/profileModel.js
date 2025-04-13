@@ -16,8 +16,8 @@ const mongoose = require('mongoose');
  *   - `degree`: The degree obtained.
  *   - `field`: The field of study.
  *   - `gpa`: The GPA achieved.
- *   - `start`: The start year of the education.
- *   - `end`: The end year of the education.
+ *   - `start`: The start date of the education.
+ *   - `end`: The end date of the education.
  * - `skills`: An array of skills.
  * - `experience`: An array of job experiences, each containing:
  *   - `job_title`: The title of the job.
@@ -49,8 +49,8 @@ const profileSchema = new mongoose.Schema({
             degree: String,
             field: String,
             gpa: Number,
-            start: Number, // year
-            end: Number,
+            start: Date, // year
+            end: Date,
         }],
         skills: [String],
         experience: [{

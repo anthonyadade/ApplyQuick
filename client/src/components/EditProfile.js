@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useProfile from '../hooks/useProfile';
 import Dropdown from './Dropdown';
+import StartNEnd from './StartNEnd';
 const PROFILE_API_URL = `${process.env.REACT_APP_SERVER_URL}/api/profile`;
 
 function EditProfileForm({ onSubmitSuccess }) {
@@ -15,7 +16,6 @@ function EditProfileForm({ onSubmitSuccess }) {
     // Example usage: Convert date fields in profile data
     useEffect(() => {
         if (firstLoad && profile) {
-            console.log(profile.education[0].start);
             const updatedProfile = {
                 ...profile,
                 experience: profile.experience.map(exp => ({
@@ -152,22 +152,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                             onChange={(e) => handleEducationChange(index, 'gpa', e.target.value)}
                         />
                     </label>
-                    <label>
-                        Start Date:
-                        <input
-                            type="date"
-                            value={edu.start}
-                            onChange={(e) => handleEducationChange(index, 'start', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        End Date:
-                        <input
-                            type="date"
-                            value={edu.end}
-                            onChange={(e) => handleEducationChange(index, 'end', e.target.value)}
-                        />
-                    </label>
+                    <StartNEnd startValue={edu.start} endValue={edu.end} index={index} onChange={handleEducationChange}/>
                 </div>
             ))}
             <button type="button" onClick={handleAddEducation}>Add Education</button>
@@ -207,22 +192,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                             onChange={(e) => handleExperienceChange(index, 'current', e.target.checked)}
                         />
                     </label>
-                    <label>
-                        Start Date:
-                        <input
-                            type="date"
-                            value={exp.start}
-                            onChange={(e) => handleExperienceChange(index, 'start', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        End Date:
-                        <input
-                            type="date"
-                            value={exp.end}
-                            onChange={(e) => handleExperienceChange(index, 'end', e.target.value)}
-                        />
-                    </label>
+                    <StartNEnd startValue={exp.start} endValue={exp.end} index={index} onChange={handleExperienceChange}/>
                     <label>
                         Description:
                         <textarea

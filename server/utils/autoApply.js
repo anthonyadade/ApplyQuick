@@ -6,15 +6,44 @@ async function autoApply(jobLink, profile) {
         defaultViewport: null
     });
 
+    const noAnswerOptions = ['Decline to', "I don't wish", 'I do not want', 'Prefer '];
+    const yesOptions = ['Yes', 'I identify'];
+    const declineOptions = ['No', 'I am not'];
+
+    // Translating our input to the application's wording
+    const optionToOptions = new Map([
+        ['Prefer Not To Say', noAnswerOptions],
+        ['Yes', yesOptions],
+        ['No', declineOptions],
+        ]);
+
     const dropdown = async (identifier, info) => {
         // Click on the input field to focus
-        await page.click(`input[id*="${identifier}"]`).catch(error => console.error(error.message));
-
-        // Type the school name
-        await page.type(`input[id*="${identifier}"]`, info).catch(error => console.error(error.message));;
-
-        // Wait for the dropdown options to appear
-        await page.waitForSelector('[role="option"]').catch(error => console.error(error.message));; // Adjust the selector if needed
+        try { // if the field doesn't exist, just return
+            await page.click(`input[id*="${identifier}"]`);
+        } catch (error) {
+            console.error(error.message);
+            return;
+        }
+        if (optionToOptions.has(info)) {
+            for (const option of optionToOptions.get(info)) {
+                try {
+                    // Type the options
+                    await page.type(`input[id*="${identifier}"]`, option);
+                    // Wait for the dropdown options to appear
+                    await page.waitForSelector('[role="option"]', { timeout: 500 });
+                    break; //break if we found a match
+                } catch (error) {
+                    console.error(`Error with option "${option}": ${error.message}`);
+                    // clear field to try next option
+                    await page.$eval(`input[id*="${identifier}"]`, el => el.value = '');
+                }
+            }
+        } else {
+            // Type the info
+            await page.type(`input[id*="${identifier}"]`, info).catch(error => console.error(error.message));
+            await page.waitForSelector('[role="option"]').catch(error => console.error(error.message));
+        }
 
         // Select the first matching option (or navigate if necessary)
         //await page.keyboard.press('ArrowDown').catch(error => console.error('School: ', error.message)); // Navigate to the first option
@@ -23,13 +52,11 @@ async function autoApply(jobLink, profile) {
     }
 
     const getMonthName = (mongoDate) => {
-        console.log(mongoDate);
         const months = [
             "January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
         ];
         const monthNum = parseInt(mongoDate.split('-')[1], 10);
-        console.log(monthNum);
         return months[monthNum - 1] || "Invalid month"; // Subtract 1 because arrays are zero-indexed
     };
 

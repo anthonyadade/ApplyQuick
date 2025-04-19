@@ -13,7 +13,6 @@ function EditProfileForm({ onSubmitSuccess }) {
         return date.toISOString().split('T')[0]; // Format as YYYY-MM-DD for date input fields
     };
 
-    // Example usage: Convert date fields in profile data
     useEffect(() => {
         if (firstLoad && profile) {
             const updatedProfile = {
@@ -77,169 +76,172 @@ function EditProfileForm({ onSubmitSuccess }) {
         e.preventDefault();
         try {
             const response = await fetch(`${PROFILE_API_URL}/save`, {
-                method: 'POST', // Use POST instead of PUT
+                method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(profile),
             });
             if (!response.ok) throw new Error('Failed to save profile');
             const updatedProfile = await response.json();
-            onSubmitSuccess(updatedProfile); // Notify parent component of success
+            onSubmitSuccess(updatedProfile);
         } catch (err) {
             setError(err.message);
         }
     };
-    
+
     if (error) return <p>Error: {error}</p>;
 
     return (
         <>
         {!profile ? <p>Loading...</p> :
-            <form onSubmit={handleSubmit}>
-            <h2>Edit Profile</h2>
-            <label>
-                First Name:
-                <input type="text" name="firstName" value={profile.firstName} onChange={handleChange} />
-            </label>
-            <label>
-                Last Name:
-                <input type="text" name="lastName" value={profile.lastName} onChange={handleChange} />
-            </label>
-            <label>
-                Email:
-                <input type="email" name="email" value={profile.email} onChange={handleChange} />
-            </label>
-            <label>
-                Phone:
-                <input type="text" name="phone" value={profile.phone} onChange={handleChange} />
-            </label>
-            <label>
-                Address:
-                <input type="text" name="address" value={profile.address} onChange={handleChange} />
-            </label>
-
-            <h3>Education</h3>
-            {profile.education.map((edu, index) => (
-                <div key={index}>
-                    <label>
-                        School:
-                        <input
-                            type="text"
-                            value={edu.school}
-                            onChange={(e) => handleEducationChange(index, 'school', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        Degree:
-                        <input
-                            type="text"
-                            value={edu.degree}
-                            onChange={(e) => handleEducationChange(index, 'degree', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        Field:
-                        <input
-                            type="text"
-                            value={edu.field}
-                            onChange={(e) => handleEducationChange(index, 'field', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        GPA:
-                        <input
-                            type="number"
-                            value={edu.gpa}
-                            onChange={(e) => handleEducationChange(index, 'gpa', e.target.value)}
-                        />
-                    </label>
-                    <StartNEnd startValue={edu.start} endValue={edu.end} index={index} onChange={handleEducationChange}/>
+            <form onSubmit={handleSubmit} className="mt-4">
+                <div className="row">
+                    <div className="col-md-6 mb-3">
+                        <label className="form-label text-indigo">First Name:</label>
+                        <input type="text" name="firstName" value={profile.firstName} onChange={handleChange} className="form-control" />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <label className="form-label text-indigo">Last Name:</label>
+                        <input type="text" name="lastName" value={profile.lastName} onChange={handleChange} className="form-control" />
+                    </div>
                 </div>
-            ))}
-            <button type="button" onClick={handleAddEducation}>Add Education</button>
-            <button type="button" onClick={() => handleRemoveLast('education')}>Remove Education</button>
-            <h3>Experience</h3>
-            {profile.experience.map((exp, index) => (
-                <div key={index}>
-                    <label>
-                        Job Title:
-                        <input
-                            type="text"
-                            value={exp.job_title}
-                            onChange={(e) => handleExperienceChange(index, 'job_title', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        Company:
-                        <input
-                            type="text"
-                            value={exp.company}
-                            onChange={(e) => handleExperienceChange(index, 'company', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        Location:
-                        <input
-                            type="text"
-                            value={exp.Location}
-                            onChange={(e) => handleExperienceChange(index, 'Location', e.target.value)}
-                        />
-                    </label>
-                    <label>
-                        Current:
-                        <input
-                            type="checkbox"
-                            checked={exp.current}
-                            onChange={(e) => handleExperienceChange(index, 'current', e.target.checked)}
-                        />
-                    </label>
-                    <StartNEnd startValue={exp.start} endValue={exp.end} index={index} onChange={handleExperienceChange}/>
-                    <label>
-                        Description:
-                        <textarea
-                            value={exp.description}
-                            onChange={(e) => handleExperienceChange(index, 'description', e.target.value)}
-                        />
-                    </label>
-                </div>
-            ))}
-            <button type="button" onClick={handleAddExperience}>Add Experience</button>
-            <button type="button" onClick={() => handleRemoveLast('experience')}>Remove Experience</button>
-            <h3>Other Details</h3>
-            <label>
-                Resume Filepath:
-                <input type="text" name="resume" value={profile.resume} onChange={handleChange} />
-            </label>
-            <label>
-                LinkedIn:
-                <input type="text" name="linkedIn" value={profile.linkedIn} onChange={handleChange} />
-            </label>
-            <label>
-                Work Authorization:
-                <input
-                    type="checkbox"
-                    name="work_authorization"
-                    checked={profile.work_authorization}
-                    onChange={handleChange}
-                />
-            </label>
-            <label>
-                Require Sponsorship:
-                <input
-                    type="checkbox"
-                    name="require_sponsorship"
-                    checked={profile.require_sponsorship}
-                    onChange={handleChange}
-                />
-            </label>
-            <Dropdown label={'Gender'} name={'gender'} options={['Male', 'Female', 'Prefer Not To Say']}  value={profile.gender} onChange={handleChange}/>
-            <Dropdown label={'Hispanic'} name={'hispanic'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.hispanic} onChange={handleChange}/>
-            <Dropdown label={'Race'} name={'race'} options={['American Indian or Alaskan Native', 'Asian', 'Black or African American', 'White',
-                'Native Hawaiian or Other Pacific Islander', 'Two or More Races', 'Prefer Not To Say']}  value={profile.race} onChange={handleChange}/>
-            <Dropdown label={'Veteran'} name={'veteran'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.veteran} onChange={handleChange}/>
-            <Dropdown label={'Disability'} name={'disability'} options={['Yes', 'No', 'Prefer Not To Say']}  value={profile.disability} onChange={handleChange}/>
 
-            <button type="submit">Save Profile</button>
-        </form>
+                <div className="row">
+                    <div className="col-md-6 mb-3">
+                        <label className="form-label text-indigo">Email:</label>
+                        <input type="email" name="email" value={profile.email} onChange={handleChange} className="form-control" />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <label className="form-label text-indigo">Phone:</label>
+                        <input type="text" name="phone" value={profile.phone} onChange={handleChange} className="form-control" />
+                    </div>
+                </div>
+
+                <div className="mb-3">
+                    <label className="form-label text-indigo">Address:</label>
+                    <input type="text" name="address" value={profile.address} onChange={handleChange} className="form-control" />
+                </div>
+
+                <div className="row">
+                    <div className="col-md-6 mb-3">
+                        <label className="form-label text-indigo">Resume:</label>
+                        <input type="text" name="resume" value={profile.resume} onChange={handleChange} className="form-control" />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <label className="form-label text-indigo">LinkedIn:</label>
+                        <input type="text" name="linkedIn" value={profile.linkedIn} onChange={handleChange} className="form-control" />
+                    </div>
+                </div>
+
+                <h3 className="mt-4 mb-3 text-purple">Education</h3>
+                {profile.education.map((edu, index) => (
+                    <div key={index} className="border rounded p-3 mb-3 bg-white shadow-sm">
+                        <div className="row">
+                            <div className="col-md-6 mb-2">
+                                <label className="form-label text-indigo">School:</label> 
+                                <input type="text" value={edu.school} onChange={(e) => handleEducationChange(index, 'school', e.target.value)} className="form-control" />
+                            </div>
+                            <div className="col-md-6 mb-2">
+                                <label className="form-label text-indigo">Degree:</label> 
+                                <input type="text" value={edu.degree} onChange={(e) => handleEducationChange(index, 'degree', e.target.value)} className="form-control" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-6 mb-2">
+                                <label className="form-label text-indigo">Field:</label> 
+                                <input type="text" value={edu.field} onChange={(e) => handleEducationChange(index, 'field', e.target.value)} className="form-control" />
+                            </div>
+                            <div className="col-md-6 mb-2">
+                                <label className="form-label text-indigo">GPA:</label> 
+                                <input type="number" value={edu.gpa} onChange={(e) => handleEducationChange(index, 'gpa', e.target.value)} className="form-control" />
+                            </div>
+                        </div>
+                        <StartNEnd startValue={edu.start} endValue={edu.end} index={index} onChange={handleEducationChange} labelClass="text-indigo" />
+                    </div>
+                ))}
+                <div className="d-flex gap-2 mb-3">
+                    <button type="button" onClick={handleAddEducation} className="btn btn-outline-indigo btn-sm">Add Education</button>
+                    <button type="button" onClick={() => handleRemoveLast('education')} className="btn btn-outline-danger btn-sm">Remove Education</button>
+                </div>
+
+                <h3 className="mt-4 mb-3 text-purple">Experience</h3>
+                {profile.experience.map((exp, index) => (
+                    <div key={index} className="border rounded p-3 mb-3 bg-white shadow-sm">
+                        <div className="row">
+                            <div className="col-md-6 mb-2">
+                                <label className="form-label text-indigo">Job Title:</label> 
+                                <input type="text" value={exp.job_title} onChange={(e) => handleExperienceChange(index, 'job_title', e.target.value)} className="form-control" />
+                            </div>
+                            <div className="col-md-6 mb-2">
+                                <label className="form-label text-indigo">Company:</label> 
+                                <input type="text" value={exp.company} onChange={(e) => handleExperienceChange(index, 'company', e.target.value)} className="form-control" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-6 mb-2">
+                                <label className="form-label text-indigo">Location:</label> 
+                                <input type="text" value={exp.Location} onChange={(e) => handleExperienceChange(index, 'Location', e.target.value)} className="form-control" />
+                            </div>
+                            <div className="col-md-6 mb-2">
+                                <div className="form-check">
+                                    <input type="checkbox" className="form-check-input" checked={exp.current} onChange={(e) => handleExperienceChange(index, 'current', e.target.checked)} />
+                                    <label className="form-check-label text-indigo">Current</label> 
+                                </div>
+                            </div>
+                        </div>
+                        <StartNEnd startValue={exp.start} endValue={exp.end} index={index} onChange={handleExperienceChange} labelClass="text-indigo" />
+                        <div className="mb-2">
+                            <label className="form-label text-indigo">Description:</label> 
+                            <textarea value={exp.description} onChange={(e) => handleExperienceChange(index, 'description', e.target.value)} className="form-control" rows="3" />
+                        </div>
+                    </div>
+                ))}
+                <div className="d-flex gap-2 mb-3">
+                    <button type="button" onClick={handleAddExperience} className="btn btn-outline-indigo btn-sm">Add Experience</button>
+                    <button type="button" onClick={() => handleRemoveLast('experience')} className="btn btn-outline-danger btn-sm">Remove Experience</button>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-6 mb-2">
+                        <div className="form-check">
+                            <input type="checkbox" className="form-check-input" name="work_authorization" checked={profile.work_authorization} onChange={handleChange} />
+                            <label className="form-check-label text-indigo">Work Authorization</label> 
+                        </div>
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <div className="form-check">
+                            <input type="checkbox" className="form-check-input" name="require_sponsorship" checked={profile.require_sponsorship} onChange={handleChange} />
+                            <label className="form-check-label text-indigo">Require Sponsorship</label> 
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-6 mb-3">
+                        <Dropdown label="Gender" name="gender" value={profile.gender} onChange={handleChange} options={['Male', 'Female', 'Prefer Not To Say']} labelClass="text-indigo" />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <Dropdown label="Hispanic" name="hispanic" value={profile.hispanic} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']} labelClass="text-indigo" />
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-6 mb-3">
+                        <Dropdown label="Race" name="race" value={profile.race} onChange={handleChange} options={['American Indian or Alaskan Native', 'Asian', 'Black or African American', 'White', 'Native Hawaiian or Other Pacific Islander', 'Two or More Races', 'Prefer Not To Say']} labelClass="text-indigo" />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <Dropdown label="Veteran" name="veteran" value={profile.veteran} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']} labelClass="text-indigo" />
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-6 mb-3">
+                        <Dropdown label="Disability" name="disability" value={profile.disability} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']} labelClass="text-indigo" />
+                    </div>
+                    <div className="col-md-6 mb-3"></div>
+                </div>
+
+                <button type="submit" className="btn btn-indigo w-100 py-2">Save Profile</button>
+            </form>
         }
         </>
     );

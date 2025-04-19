@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.btn.btn-indigo {
+    color: #fff;
+    background-color: #6610f2; /* Or your preferred indigo color */
+    border-color: #6610f2;
+}
+
+.btn.btn-outline-indigo { /* More specific selector */
+  color: #6610f2;
+  border-color: #6610f2;
+}
+
+.text-indigo {
+    color: #6610f2 !important;
+}
+
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+.btn.btn-yellow {
+  color: #212529; /* Dark text for contrast on yellow */
+  background-color: #ffc107; /* Bootstrap's yellow */
+  border-color: #ffc107;
+}
+

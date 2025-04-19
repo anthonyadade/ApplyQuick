@@ -1,10 +1,10 @@
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import useProfile from '../hooks/useProfile';
 
 function AutoApplyForm() {
     const [jobLink, setJobLink] = useState('');
-    const {profile, setProfile, error, setError} = useProfile();
+    const { profile, setProfile, error, setError } = useProfile();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,16 +22,21 @@ function AutoApplyForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
-                Job Application Link:
+            <div className="mb-3">
+                <label className="form-label">
+                    Job Application Link:
+                </label>
                 <input
                     type="text"
                     value={jobLink}
                     onChange={(e) => setJobLink(e.target.value)}
                     required
+                    className="form-control"
                 />
-            </label>
-            <button type="submit">Start Auto-Apply</button>
+            </div>
+            <div>
+                <button type="submit" className="btn btn-yellow w-100 py-2">Apply Now</button>
+            </div>
         </form>
     );
 }

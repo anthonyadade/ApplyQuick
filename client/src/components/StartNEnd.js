@@ -9,14 +9,12 @@
  * - `endValue` (string): The current value for the end date.
  * - `index` (number): The index of the item being edited (used to identify the item in a list).
  * - `onChange` (function): A callback function to handle changes to the date fields.
- * - `labelClass` (string, optional): A CSS class to apply to the labels.
  */
-const StartNEnd = ({ startValue, endValue, index, onChange, labelClass = "" }) => {
+const StartNEnd = ({ startValue, endValue, index, onChange}) => {
     const date = (startOrEnd, value, index) => {
-        const labelClasses = `form-label ${labelClass}`.trim();
         return (
             <div>
-                <label className={labelClasses}>
+                <label className="text-indigo">
                     {startOrEnd} Date:
                     <input
                         type="date"

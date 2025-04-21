@@ -155,7 +155,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                                 <input type="number" value={edu.gpa} onChange={(e) => handleEducationChange(index, 'gpa', e.target.value)} className="form-control" />
                             </div>
                         </div>
-                        <StartNEnd startValue={edu.start} endValue={edu.end} index={index} onChange={handleEducationChange} labelClass="text-indigo" />
+                        <StartNEnd startValue={edu.start} endValue={edu.end} index={index} onChange={handleEducationChange}/>
                     </div>
                 ))}
                 <div className="d-flex gap-2 mb-3">
@@ -188,7 +188,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                                 </div>
                             </div>
                         </div>
-                        <StartNEnd startValue={exp.start} endValue={exp.end} index={index} onChange={handleExperienceChange} labelClass="text-indigo" />
+                        <StartNEnd startValue={exp.start} endValue={exp.end} index={index} onChange={handleExperienceChange}/>
                         <div className="mb-2">
                             <label className="form-label text-indigo">Description:</label> 
                             <textarea value={exp.description} onChange={(e) => handleExperienceChange(index, 'description', e.target.value)} className="form-control" rows="3" />
@@ -217,25 +217,25 @@ function EditProfileForm({ onSubmitSuccess }) {
 
                 <div className="row">
                     <div className="col-md-6 mb-3">
-                        <Dropdown label="Gender" name="gender" value={profile.gender} onChange={handleChange} options={['Male', 'Female', 'Prefer Not To Say']} labelClass="text-indigo" />
+                        <Dropdown label="Gender" name="gender" value={profile.gender} onChange={handleChange} options={['Male', 'Female', 'Prefer Not To Say']}/>
                     </div>
                     <div className="col-md-6 mb-3">
-                        <Dropdown label="Hispanic" name="hispanic" value={profile.hispanic} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']} labelClass="text-indigo" />
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-md-6 mb-3">
-                        <Dropdown label="Race" name="race" value={profile.race} onChange={handleChange} options={['American Indian or Alaskan Native', 'Asian', 'Black or African American', 'White', 'Native Hawaiian or Other Pacific Islander', 'Two or More Races', 'Prefer Not To Say']} labelClass="text-indigo" />
-                    </div>
-                    <div className="col-md-6 mb-3">
-                        <Dropdown label="Veteran" name="veteran" value={profile.veteran} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']} labelClass="text-indigo" />
+                        <Dropdown label="Hispanic" name="hispanic" value={profile.hispanic} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']}/>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="col-md-6 mb-3">
-                        <Dropdown label="Disability" name="disability" value={profile.disability} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']} labelClass="text-indigo" />
+                        <Dropdown label="Race" name="race" value={profile.race} onChange={handleChange} options={['American Indian or Alaskan Native', 'Asian', 'Black or African American', 'White', 'Native Hawaiian or Other Pacific Islander', 'Two or More Races', 'Prefer Not To Say']}/>
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <Dropdown label="Veteran" name="veteran" value={profile.veteran} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']}/>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-6 mb-3">
+                        <Dropdown label="Disability" name="disability" value={profile.disability} onChange={handleChange} options={['Yes', 'No', 'Prefer Not To Say']}/>
                     </div>
                     <div className="col-md-6 mb-3"></div>
                 </div>

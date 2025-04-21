@@ -59,8 +59,8 @@ async function autoApply(jobLink, profile) {
         const monthNum = parseInt(mongoDate.split('-')[1], 10);
         return months[monthNum - 1] || "Invalid month"; // Subtract 1 because arrays are zero-indexed
     };
-
-    const page = await browser.newPage();
+    
+    const page = (await browser.pages())[0];
     await page.goto(jobLink, { waitUntil: 'networkidle2' });
 
     try {

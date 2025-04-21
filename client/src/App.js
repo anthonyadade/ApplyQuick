@@ -28,11 +28,6 @@ function App() {
                             <p className="lead opacity-80">
                                 Revolutionize your job search and spend less time on applications.
                             </p>
-                            {/* You could add a subtle graphic or animation here */}
-                        </div>
-                        {/* Optional: Add an image or visual element on larger screens */}
-                        <div className="col-md-6 d-none d-md-block">
-                            {/* <img src="path/to/your/image.svg" alt="Quick Apply" className="img-fluid" /> */}
                         </div>
                     </div>
                 </div>

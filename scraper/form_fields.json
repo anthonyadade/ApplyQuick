@@ -1,0 +1,64 @@
+[
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "data-automation-id": "email",
+      "id": "input-4",
+      "aria-required": "true",
+      "aria-invalid": "false",
+      "autocomplete": "email",
+      "class": "css-kohepr",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "password",
+      "data-automation-id": "password",
+      "id": "input-5",
+      "aria-required": "true",
+      "autocomplete": "new-password",
+      "class": "css-kohepr",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "password",
+      "data-automation-id": "verifyPassword",
+      "id": "input-6",
+      "aria-required": "true",
+      "autocomplete": "new-password",
+      "class": "css-kohepr",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "input-8",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "data-automation-id": "createAccountCheckbox",
+      "class": "css-12h9wd9"
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "data-automation-id": "beecatcher",
+      "id": "e74e8001-19ff-4e61-bd63-2e990d7f1198",
+      "name": "website",
+      "type": "text",
+      "class": "css-umjazw"
+    },
+    "label": ""
+  }
+]

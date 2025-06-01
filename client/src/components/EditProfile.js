@@ -61,7 +61,7 @@ function EditProfileForm({ onSubmitSuccess }) {
     const handleAddExperience = () => {
         setProfile({
             ...profile,
-            experience: [...profile.experience, { job_title: '', company: '', Location: '', current: false, start: '', end: '', description: '' }],
+            experience: [...profile.experience, { jobTitle: '', company: '', jobLocation: '', currentJob: false, start: '', end: '', description: '' }],
         });
     };
 
@@ -169,7 +169,7 @@ function EditProfileForm({ onSubmitSuccess }) {
                         <div className="row">
                             <div className="col-md-6 mb-2">
                                 <label className="form-label text-indigo">Job Title:</label> 
-                                <input type="text" value={exp.job_title} onChange={(e) => handleExperienceChange(index, 'job_title', e.target.value)} className="form-control" />
+                                <input type="text" value={exp.jobTitle} onChange={(e) => handleExperienceChange(index, 'jobTitle', e.target.value)} className="form-control" />
                             </div>
                             <div className="col-md-6 mb-2">
                                 <label className="form-label text-indigo">Company:</label> 
@@ -179,11 +179,11 @@ function EditProfileForm({ onSubmitSuccess }) {
                         <div className="row">
                             <div className="col-md-6 mb-2">
                                 <label className="form-label text-indigo">Location:</label> 
-                                <input type="text" value={exp.Location} onChange={(e) => handleExperienceChange(index, 'Location', e.target.value)} className="form-control" />
+                                <input type="text" value={exp.jobLocation} onChange={(e) => handleExperienceChange(index, 'jobLocation', e.target.value)} className="form-control" />
                             </div>
                             <div className="col-md-6 mb-2">
                                 <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" checked={exp.current} onChange={(e) => handleExperienceChange(index, 'current', e.target.checked)} />
+                                    <input type="checkbox" className="form-check-input" checked={exp.currentJob} onChange={(e) => handleExperienceChange(index, 'current', e.target.checked)} />
                                     <label className="form-check-label text-indigo">Current</label> 
                                 </div>
                             </div>

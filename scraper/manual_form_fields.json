@@ -1,0 +1,246 @@
+[
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "PersonProfileFields.FirstName",
+      "name": "PersonProfileFields.FirstName",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "192",
+      "autocomplete": "given-name"
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "PersonProfileFields.LastName",
+      "name": "PersonProfileFields.LastName",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "autocomplete": "family-name"
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "email",
+      "id": "PersonProfileFields.Email",
+      "name": "PersonProfileFields.Email",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_EmailField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "maxlength": "128",
+      "autocomplete": "email",
+      "value": "ajadade@rocketmail.com"
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.AddressStreet1",
+      "name": "-1_PersonProfileFields.AddressStreet1",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "autocomplete": "street-address"
+    },
+    "label": "street"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_PersonProfileFields.AddressCountry_dropdown-results",
+      "aria-expanded": "false",
+      "style": "width: 198px;"
+    },
+    "label": "country"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_PersonProfileFields.AddressState_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "state"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.AddressCity",
+      "name": "-1_PersonProfileFields.AddressCity",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "autocomplete": "address-level2"
+    },
+    "label": "city"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.AddressZip",
+      "name": "-1_PersonProfileFields.AddressZip",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "16",
+      "autocomplete": "postal-code"
+    },
+    "label": "postalCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.PhoneNumber",
+      "name": "-1_PersonProfileFields.PhoneNumber",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "autocomplete": "tel-national"
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.School_dropdown-results",
+      "aria-expanded": "true",
+      "aria-activedescendant": "result-selectable_-1_CandProfileFields.School_0",
+      "style": "width: 198px;"
+    },
+    "label": "school"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.Degree_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "degree"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.Major_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "field"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "3",
+      "id": "-1_CandProfileFields.GPA",
+      "name": "-1_CandProfileFields.GPA",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_DecimalField iCIMS_Forms_Qnull form-control",
+      "onchange": "pageDirtyFlag=true; "
+    },
+    "label": "gpa"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.EducationCountry_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "educationCountry"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.EducationState_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "educationState"
+  }
+]

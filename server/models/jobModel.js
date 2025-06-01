@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
  * Each job includes the following fields:
  * - `title`: The title of the job.
  * - `company`: The name of the company.
- * - `location`: The location of the job.
+ * - `jobLocation`: The location of the job.
  * - `link`: The link to the job posting.
  * - `status`: The current status of the job application, which can be 'Saved', 'Applied', 'Interview', 'Offer', or 'Rejected'.
  * - `appliedDate`: The date when the job application was submitted.
@@ -15,7 +15,7 @@ const mongoose = require('mongoose');
 const jobSchema = new mongoose.Schema({
     title: String,
     company: String,
-    location: String,
+    jobLocation: String,
     link: String,
     status: { type: String, enum: ['Saved', 'Applied', 'Interview', 'Offer', 'Rejected'] },
     appliedDate: Date

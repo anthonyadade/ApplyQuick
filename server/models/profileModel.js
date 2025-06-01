@@ -20,10 +20,10 @@ const mongoose = require('mongoose');
  *   - `end`: The end date of the education.
  * - `skills`: An array of skills.
  * - `experience`: An array of job experiences, each containing:
- *   - `job_title`: The title of the job.
+ *   - `jobTitle`: The title of the job.
  *   - `company`: The name of the company.
- *   - `Location`: The location of the job.
- *   - `current`: Whether the job is current.
+ *   - `jobLocation`: The location of the job.
+ *   - `currentJob`: Whether the job is current.
  *   - `start`: The start date of the job.
  *   - `end`: The end date of the job.
  *   - `description`: A description of the job.
@@ -54,10 +54,10 @@ const profileSchema = new mongoose.Schema({
         }],
         skills: [String],
         experience: [{
-            job_title: String,
+            jobTitle: String,
             company: String,
-            Location: String,
-            current: Boolean,
+            jobLocation: String,
+            currentJob: Boolean,
             start: Date,
             end: Date,
             description: String,

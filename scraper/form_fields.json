@@ -2,62 +2,388 @@
   {
     "tag": "input",
     "attributes": {
-      "type": "text",
-      "data-automation-id": "email",
-      "id": "input-4",
-      "aria-required": "true",
+      "id": "first_name",
+      "class": "input input__single-line",
+      "aria-label": "First Name",
+      "aria-describedby": "first_name-description first_name-error first_name-help",
       "aria-invalid": "false",
-      "autocomplete": "email",
-      "class": "css-kohepr",
-      "value": ""
-    },
-    "label": ""
-  },
-  {
-    "tag": "input",
-    "attributes": {
-      "type": "password",
-      "data-automation-id": "password",
-      "id": "input-5",
+      "aria-errormessage": "first_name-error",
       "aria-required": "true",
-      "autocomplete": "new-password",
-      "class": "css-kohepr",
-      "value": ""
-    },
-    "label": ""
-  },
-  {
-    "tag": "input",
-    "attributes": {
-      "type": "password",
-      "data-automation-id": "verifyPassword",
-      "id": "input-6",
-      "aria-required": "true",
-      "autocomplete": "new-password",
-      "class": "css-kohepr",
-      "value": ""
-    },
-    "label": ""
-  },
-  {
-    "tag": "input",
-    "attributes": {
-      "id": "input-8",
-      "type": "checkbox",
-      "aria-checked": "false",
-      "data-automation-id": "createAccountCheckbox",
-      "class": "css-12h9wd9"
-    },
-    "label": ""
-  },
-  {
-    "tag": "input",
-    "attributes": {
-      "data-automation-id": "beecatcher",
-      "id": "e74e8001-19ff-4e61-bd63-2e990d7f1198",
-      "name": "website",
       "type": "text",
-      "class": "css-umjazw"
+      "maxlength": "255",
+      "autocomplete": "given-name",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "last_name",
+      "class": "input input__single-line",
+      "aria-label": "Last Name",
+      "aria-describedby": "last_name-description last_name-error last_name-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "last_name-error",
+      "aria-required": "true",
+      "type": "text",
+      "maxlength": "255",
+      "autocomplete": "family-name",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "email",
+      "class": "input input__single-line",
+      "aria-label": "Email",
+      "aria-describedby": "email-description email-error email-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "email-error",
+      "aria-required": "true",
+      "type": "text",
+      "maxlength": "255",
+      "autocomplete": "email",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "phone",
+      "class": "input input__single-line",
+      "aria-label": "Phone",
+      "aria-describedby": "phone-description phone-error phone-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "phone-error",
+      "aria-required": "false",
+      "type": "text",
+      "maxlength": "255",
+      "autocomplete": "tel",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "resume",
+      "class": "visually-hidden",
+      "type": "file",
+      "accept": ".pdf,.doc,.docx,.txt,.rtf"
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "cover_letter",
+      "class": "visually-hidden",
+      "type": "file",
+      "accept": ".pdf,.doc,.docx,.txt,.rtf"
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "school--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "school--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "school--0-label",
+      "aria-required": "true",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-school--0-placeholder school--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "required": "",
+      "tabindex": "-1",
+      "aria-hidden": "true",
+      "class": "remix-css-1a0ro4n-requiredInput",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "degree--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "degree--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "degree--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-degree--0-placeholder degree--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "discipline--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "discipline--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "discipline--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-discipline--0-placeholder discipline--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "start-month--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "start-month--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "start-month--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-start-month--0-placeholder start-month--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "start-year--0",
+      "class": "input input__single-line",
+      "aria-label": "Start date year",
+      "aria-describedby": "start-year--0-description start-year--0-error start-year--0-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "start-year--0-error",
+      "aria-required": "false",
+      "type": "number",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "end-month--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "end-month--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "end-month--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-end-month--0-placeholder end-month--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "end-year--0",
+      "class": "input input__single-line",
+      "aria-label": "End date year",
+      "aria-describedby": "end-year--0-description end-year--0-error end-year--0-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "end-year--0-error",
+      "aria-required": "false",
+      "type": "number",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "question_15615031003",
+      "class": "input input__single-line",
+      "aria-label": "LinkedIn Profile",
+      "aria-describedby": "question_15615031003-description question_15615031003-error question_15615031003-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "question_15615031003-error",
+      "aria-required": "false",
+      "type": "text",
+      "maxlength": "255",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "gender",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "gender-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "gender-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-gender-placeholder gender-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "hispanic_ethnicity",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "hispanic_ethnicity-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "hispanic_ethnicity-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-hispanic_ethnicity-placeholder hispanic_ethnicity-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "veteran_status",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "veteran_status-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "veteran_status-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-veteran_status-placeholder veteran_status-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": ""
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "disability_status",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "disability_status-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "disability_status-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-disability_status-placeholder disability_status-error",
+      "enterkeyhint": "done",
+      "value": ""
     },
     "label": ""
   }

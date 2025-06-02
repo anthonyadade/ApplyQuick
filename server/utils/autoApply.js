@@ -1,4 +1,26 @@
 const puppeteer = require('puppeteer');
+const axios = require('axios');
+
+// call the ml model
+async function predictFieldLabel(field) {
+    try {
+        const response = await axios.post('http://localhost:8001/predict', field);
+        console.log(field.attributes['name'] + ", response: " + response.data.label)
+        return response.data.label;
+    } catch (error) {
+        console.error('ML prediction error:', error.message);
+        return "unknown";
+    }
+}
+
+// // Helper: get the frame containing the form
+// async function getFormFrame() {
+//     const frames = page.frames();
+//     // Heuristically pick the right iframe (could use more advanced checks)
+//     return frames.find(frame =>
+//         frame.url().includes('in_iframe=1')
+//     );
+// }
 
 async function autoApply(jobLink, profile) {
     const browser = await puppeteer.launch({
@@ -20,7 +42,7 @@ async function autoApply(jobLink, profile) {
     const dropdown = async (identifier, info) => {
         // Click on the input field to focus
         try { // if the field doesn't exist, just return
-            await page.click(`input[id*="${identifier}"]`);
+            await scrapee.click(`input[id*="${identifier}"]`);
         } catch (error) {
             console.error(error.message);
             return;
@@ -29,25 +51,25 @@ async function autoApply(jobLink, profile) {
             for (const option of optionToOptions.get(info)) {
                 try {
                     // Type the options
-                    await page.type(`input[id*="${identifier}"]`, option);
+                    await scrapee.type(`input[id*="${identifier}"]`, option);
                     // Wait for the dropdown options to appear
-                    await page.waitForSelector('[role="option"]', { timeout: 500 });
+                    await scrapee.waitForSelector('[role="option"]', { timeout: 500 });
                     break; //break if we found a match
                 } catch (error) {
                     console.error(`Error with option "${option}": ${error.message}`);
                     // clear field to try next option
-                    await page.$eval(`input[id*="${identifier}"]`, el => el.value = '');
+                    await scrapee.$eval(`input[id*="${identifier}"]`, el => el.value = '');
                 }
             }
         } else {
             // Type the info
-            await page.type(`input[id*="${identifier}"]`, info).catch(error => console.error(error.message));
-            await page.waitForSelector('[role="option"]').catch(error => console.error(error.message));
+            await scrapee.type(`input[id*="${identifier}"]`, info).catch(error => console.error(error.message));
+            await scrapee.waitForSelector('[role="option"]').catch(error => console.error(error.message));
         }
 
         // Select the first matching option (or navigate if necessary)
-        //await page.keyboard.press('ArrowDown').catch(error => console.error('School: ', error.message)); // Navigate to the first option
-        await page.keyboard.press('Enter').catch(error => console.error(error.message)); // Select the option
+        //await scrapee.keyboard.press('ArrowDown').catch(error => console.error('School: ', error.message)); // Navigate to the first option
+        await scrapee.keyboard.press('Enter').catch(error => console.error(error.message)); // Select the option
         
     }
 
@@ -59,59 +81,54 @@ async function autoApply(jobLink, profile) {
         const monthNum = parseInt(mongoDate.split('-')[1], 10);
         return months[monthNum - 1] || "Invalid month"; // Subtract 1 because arrays are zero-indexed
     };
-    
+
+
+    // Helper: get the frame containing the form
+    const getFormFrame = async () => {
+        const frames = page.frames();
+        // Heuristically pick the right iframe (could use more advanced checks)
+        return frames.find(frame =>
+            frame.url().includes('in_iframe=1')
+        );
+    }
+
     const page = (await browser.pages())[0];
     await page.goto(jobLink, { waitUntil: 'networkidle2' });
 
     try {
-        // Auto-fill known details
-        await page.type('input[aria-label*="First"]', profile.firstName || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="Last"]', profile.lastName || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="Email"]', profile.email || '').catch(error => console.error(error.message));
-        await page.select('select[id*="device"]', profile.deviceType).catch(error => console.error(error.message));
-        await page.type('input[aria-label*="Phone"]', profile.phone || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="title"]', profile.phone || '').catch(error => console.error(error.message));
-        await page.type('input[aria-label*="LinkedIn"]', profile.linkedIn || '').catch(error => console.error(error.message));
-        // Iterate through the education section
-        const edu = profile.education;
-        for (let i=0; i<edu.length; i++) {
-            await dropdown('school--'+i, edu[i].school);
-            await dropdown('degree--'+i, edu[i].degree);
-            await dropdown('discipline--'+i, edu[i].field);
-            await dropdown('start-month--'+i, getMonthName(edu[i].start));
-            await dropdown('end-month--'+i, getMonthName(edu[i].end));
-            await page.type(`input[id*="start-year--${i}"]`, edu[i].start.slice(0, 4) || '').catch(error => console.error(error.message));
-            await page.type(`input[id*="end-year--${i}"]`, edu[i].end.slice(0, 4) || '').catch(error => console.error(error.message));
-            if (i+1 !== edu.length) {
-                await page.click('button[class*="add-another"]');
+
+        const formFrame = await getFormFrame();
+        const scrapee = formFrame || page;
+        
+        await scrapee.waitForSelector('input, select', { timeout: 10000 });
+        
+        const elements = await scrapee.$$('input, select');
+
+        for (const el of elements) {
+            const attrs = await el.evaluate(e => {
+                const obj = {};
+                for (const attr of e.getAttributeNames()) {
+                    obj[attr] = e.getAttribute(attr);
+                }
+                return obj;
+            });
+            const input = {
+                tag: await el.evaluate(e => e.tagName.toLowerCase()),
+                attributes: attrs,
+                label: ""
+            };
+            const predictedLabel = await predictFieldLabel(input);
+            // Now use predictedLabel to decide how to autofill this field
+            if (predictedLabel in profile) {
+                await el.type(profile[predictedLabel] || '').catch(error => console.error(error.message));
             }
         }
 
-        const resume = await page.waitForSelector('input[type=file]').catch(error => console.error(error.message));
-        await resume.uploadFile(profile.resume).catch(error => console.error(error.message));
-        await dropdown('gender', profile.gender);
-        await dropdown('hispanic', profile.hispanic);
-        await dropdown('race', profile.race);
-        await dropdown('veteran', profile.veteran);
-        await dropdown('disability', profile.disability);
-        
-        // Resume with manual input for unknown fields
-        const unknownFields = await page.$$('input:not([value]):not([name="fullName"]):not([name="email"]):not([name="phone"])');
-
-        if (unknownFields.length > 0) {
-            console.log('⚠️ Pausing for manual input. Please complete the remaining fields.');
-            await page.evaluate(() => alert('Please fill in the remaining fields and click "Submit" manually.'));
-        } else {
-            console.log('✅ All known details filled. Submitting...');
-            //await page.click('button[type="submit"]');
-        }
+        await scrapee.evaluate(() => alert('Autofill complete.'));
 
     } catch (error) {
         console.error(`❌ Error during auto-application: ${error.message}`);
-        //return {error:`❌ Error during auto-application: ${error.message}`};
     }
-
-    //await browser.close();
 }
 
 module.exports = autoApply;

@@ -71,6 +71,26 @@ const profileSchema = new mongoose.Schema({
         race: String,
         veteran: String,
         disability: String,
+
+        //need to add support for below!
+        coverLetter: String, // filepath
+        countryCode: String, // phone number country code
+        street: String,
+        city: String,
+        postalCode: String,
+        inPerson: Boolean, // willing to work in office wherever
+        country: String,
+        state: String,
+        graduated: Boolean, // prob add to education
+        educationCountry: String, // prob add to education
+        educationState: String, // prob add to education
+        middleName: String,
+        havePreferredName: Boolean,
+        preferredName: String,
+        phoneExtension: String,
+        tAndC: String,
+        street2: String,
+        county: String,
 });
 
 module.exports = mongoose.model('Profile', profileSchema);

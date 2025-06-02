@@ -1,0 +1,4376 @@
+[
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "first_name",
+      "class": "input input__single-line",
+      "aria-label": "First Name",
+      "aria-describedby": "first_name-description first_name-error first_name-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "first_name-error",
+      "aria-required": "true",
+      "type": "text",
+      "maxlength": "255",
+      "autocomplete": "given-name",
+      "value": ""
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "last_name",
+      "class": "input input__single-line",
+      "aria-label": "Last Name",
+      "aria-describedby": "last_name-description last_name-error last_name-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "last_name-error",
+      "aria-required": "true",
+      "type": "text",
+      "maxlength": "255",
+      "autocomplete": "family-name",
+      "value": ""
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "email",
+      "class": "input input__single-line",
+      "aria-label": "Email",
+      "aria-describedby": "email-description email-error email-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "email-error",
+      "aria-required": "true",
+      "type": "text",
+      "maxlength": "255",
+      "autocomplete": "email",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "phone",
+      "class": "input input__single-line",
+      "aria-label": "Phone",
+      "aria-describedby": "phone-description phone-error phone-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "phone-error",
+      "aria-required": "false",
+      "type": "text",
+      "maxlength": "255",
+      "autocomplete": "tel",
+      "value": ""
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "resume",
+      "class": "visually-hidden",
+      "type": "file",
+      "accept": ".pdf,.doc,.docx,.txt,.rtf"
+    },
+    "label": "resume"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "cover_letter",
+      "class": "visually-hidden",
+      "type": "file",
+      "accept": ".pdf,.doc,.docx,.txt,.rtf"
+    },
+    "label": "coverLetter"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "school--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "school--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "school--0-label",
+      "aria-required": "true",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-school--0-placeholder school--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "school"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "degree--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "degree--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "degree--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-degree--0-placeholder degree--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "degree"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "discipline--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "discipline--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "discipline--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-discipline--0-placeholder discipline--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "field"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "start-month--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "start-month--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "start-month--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-start-month--0-placeholder start-month--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "startMonth"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "start-year--0",
+      "class": "input input__single-line",
+      "aria-label": "Start date year",
+      "aria-describedby": "start-year--0-description start-year--0-error start-year--0-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "start-year--0-error",
+      "aria-required": "false",
+      "type": "number",
+      "value": ""
+    },
+    "label": "startYear"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "end-month--0",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "end-month--0-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "end-month--0-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-end-month--0-placeholder end-month--0-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "endMonth"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "end-year--0",
+      "class": "input input__single-line",
+      "aria-label": "End date year",
+      "aria-describedby": "end-year--0-description end-year--0-error end-year--0-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "end-year--0-error",
+      "aria-required": "false",
+      "type": "number",
+      "value": ""
+    },
+    "label": "endYear"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "question_15615031003",
+      "class": "input input__single-line",
+      "aria-label": "LinkedIn Profile",
+      "aria-describedby": "question_15615031003-description question_15615031003-error question_15615031003-help",
+      "aria-invalid": "false",
+      "aria-errormessage": "question_15615031003-error",
+      "aria-required": "false",
+      "type": "text",
+      "maxlength": "255",
+      "value": ""
+    },
+    "label": "linkedIn"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "gender",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "gender-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "gender-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-gender-placeholder gender-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "gender"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "hispanic_ethnicity",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "hispanic_ethnicity-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "hispanic_ethnicity-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-hispanic_ethnicity-placeholder hispanic_ethnicity-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "hispanic"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "veteran_status",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "veteran_status-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "veteran_status-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-veteran_status-placeholder veteran_status-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "veteran"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select__input",
+      "style": "label:input;color:inherit;background:0;opacity:1;width:100%;grid-area:1 / 2;font:inherit;min-width:2px;border:0;margin:0;outline:0;padding:0",
+      "autocapitalize": "none",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "id": "disability_status",
+      "spellcheck": "false",
+      "tabindex": "0",
+      "type": "text",
+      "aria-autocomplete": "list",
+      "aria-expanded": "false",
+      "aria-haspopup": "true",
+      "aria-errormessage": "disability_status-error",
+      "aria-invalid": "false",
+      "aria-labelledby": "disability_status-label",
+      "aria-required": "false",
+      "role": "combobox",
+      "aria-activedescendant": "",
+      "aria-describedby": "react-select-disability_status-placeholder disability_status-error",
+      "enterkeyhint": "done",
+      "value": ""
+    },
+    "label": "disability"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "data-automation-id": "email",
+      "id": "input-4",
+      "aria-required": "true",
+      "aria-invalid": "false",
+      "autocomplete": "email",
+      "class": "css-kohepr",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "textbox",
+      "tabindex": "0",
+      "aria-label": "First Name",
+      "autocomplete": "on",
+      "aria-invalid": "false",
+      "type": "text",
+      "step": "1",
+      "id": "first-name-input",
+      "class": "form-control apply-form-text-input",
+      "name": "",
+      "placeholder": "First Name",
+      "required": "",
+      "data-testid": "common-text-input-first-name-input",
+      "value": ""
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "textbox",
+      "tabindex": "0",
+      "aria-label": "Last Name",
+      "autocomplete": "on",
+      "aria-invalid": "false",
+      "type": "text",
+      "step": "1",
+      "id": "last-name-input",
+      "class": "form-control apply-form-text-input",
+      "name": "",
+      "placeholder": "Last Name",
+      "required": "",
+      "data-testid": "common-text-input-last-name-input",
+      "value": ""
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "phone-country-code-dropdown",
+      "aria-activedescendant": "react-select-2--value",
+      "aria-expanded": "false",
+      "aria-haspopup": "false",
+      "aria-label": "Select country code",
+      "aria-owns": "",
+      "role": "combobox",
+      "value": "",
+      "style": "box-sizing: content-box; width: 5px;"
+    },
+    "label": "countryCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "textbox",
+      "tabindex": "0",
+      "aria-label": "Phone Number",
+      "autocomplete": "on",
+      "aria-invalid": "false",
+      "type": "text",
+      "step": "1",
+      "id": "phone-input",
+      "class": "form-control applyFormTextInput-3RXIh apply-form-text-input",
+      "name": "",
+      "placeholder": "Phone Number",
+      "required": "",
+      "data-testid": "common-text-input-phone-input",
+      "value": ""
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "textbox",
+      "tabindex": "0",
+      "aria-label": "Email",
+      "autocomplete": "on",
+      "aria-invalid": "false",
+      "type": "text",
+      "step": "1",
+      "id": "postion-apply-input-email",
+      "class": "form-control apply-form-text-input",
+      "name": "",
+      "placeholder": "Email",
+      "required": "",
+      "data-testid": "common-text-input-postion-apply-input-email",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "textbox",
+      "tabindex": "0",
+      "autocomplete": "on",
+      "aria-invalid": "false",
+      "aria-labelledby": "Q_STREET_NAME",
+      "type": "text",
+      "step": "1",
+      "id": "0-2-additional-questions-text-row",
+      "class": "form-control apply-form-text-input",
+      "name": "",
+      "placeholder": "",
+      "data-testid": "common-text-input-0-2-additional-questions-text-row",
+      "value": ""
+    },
+    "label": "street"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "textbox",
+      "tabindex": "0",
+      "autocomplete": "on",
+      "aria-invalid": "false",
+      "aria-labelledby": "Q_CITY",
+      "type": "text",
+      "step": "1",
+      "id": "0-3-additional-questions-text-row",
+      "class": "form-control apply-form-text-input",
+      "name": "",
+      "placeholder": "",
+      "required": "",
+      "data-testid": "common-text-input-0-3-additional-questions-text-row",
+      "value": ""
+    },
+    "label": "city"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "textbox",
+      "tabindex": "0",
+      "autocomplete": "on",
+      "aria-invalid": "false",
+      "aria-labelledby": "Q_POSTAL_CODE",
+      "type": "text",
+      "step": "1",
+      "id": "0-4-additional-questions-text-row",
+      "class": "form-control apply-form-text-input",
+      "name": "",
+      "placeholder": "",
+      "data-testid": "common-text-input-0-4-additional-questions-text-row",
+      "value": ""
+    },
+    "label": "postalCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "first_name",
+      "name": "job_application[first_name]",
+      "aria-required": "true",
+      "maxlength": "255",
+      "autocomplete": "given-name"
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "last_name",
+      "name": "job_application[last_name]",
+      "aria-required": "true",
+      "maxlength": "255",
+      "autocomplete": "family-name"
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "email",
+      "name": "job_application[email]",
+      "aria-required": "true",
+      "maxlength": "255",
+      "autocomplete": "email"
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "phone",
+      "name": "job_application[phone]",
+      "maxlength": "255",
+      "autocomplete": "tel",
+      "required": "required",
+      "aria-required": "true"
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "auto_complete_input",
+      "name": "job_application[workLocation]",
+      "type": "text",
+      "aria-labelledby": "location_autocomplete_label",
+      "aria-required": "true",
+      "maxlength": "255",
+      "role": "combobox",
+      "aria-controls": "location_autocomplete-items-popup",
+      "aria-expanded": "false",
+      "aria-autocomplete": "list",
+      "aria-haspopup": "listbox",
+      "autocomplete": "off",
+      "spellcheck": "false"
+    },
+    "label": "city"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "name": "job_application[answers_attributes][6][text_value]",
+      "id": "job_application_answers_attributes_6_text_value",
+      "aria-required": "true",
+      "maxlength": "255",
+      "autocomplete": "custom-question-this-position-requires-that-you-be-available-to-work-in-our-san-mateo-ca-headquarters-office-most-days-will-you-please-confirm-your-ability-to-commit-to-this-requirement"
+    },
+    "label": "inPerson"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "name": "job_application[answers_attributes][7][text_value]",
+      "id": "job_application_answers_attributes_7_text_value",
+      "aria-required": "false",
+      "maxlength": "255",
+      "autocomplete": "custom-question-if-you-do-not-currently-live-a-commutable-distance-to-our-san-mateo-ca-office-will-you-please-let-us-know-if-you-plan-to-relocate-"
+    },
+    "label": "relocation"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[gender]",
+      "id": "job_application_gender",
+      "aria-required": "false"
+    },
+    "label": "gender"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[hispanic_ethnicity]",
+      "id": "job_application_hispanic_ethnicity",
+      "aria-required": "false"
+    },
+    "label": "hispanic"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[race]",
+      "id": "job_application_race",
+      "aria-required": "false"
+    },
+    "label": "race"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[veteran_status]",
+      "id": "job_application_veteran_status",
+      "aria-required": "false"
+    },
+    "label": "veteran"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[disability_status]",
+      "id": "job_application_disability_status",
+      "aria-required": "false"
+    },
+    "label": "disability"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "PersonProfileFields.FirstName",
+      "name": "PersonProfileFields.FirstName",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "192",
+      "autocomplete": "given-name"
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "PersonProfileFields.LastName",
+      "name": "PersonProfileFields.LastName",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "autocomplete": "family-name"
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "email",
+      "id": "PersonProfileFields.Email",
+      "name": "PersonProfileFields.Email",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_EmailField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "maxlength": "128",
+      "autocomplete": "email",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.AddressStreet1",
+      "name": "-1_PersonProfileFields.AddressStreet1",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "autocomplete": "street-address"
+    },
+    "label": "street"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_PersonProfileFields.AddressCountry_dropdown-results",
+      "aria-expanded": "false",
+      "style": "width: 198px;"
+    },
+    "label": "country"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_PersonProfileFields.AddressState_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "state"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.AddressCity",
+      "name": "-1_PersonProfileFields.AddressCity",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "autocomplete": "address-level2"
+    },
+    "label": "city"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.AddressZip",
+      "name": "-1_PersonProfileFields.AddressZip",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "16",
+      "autocomplete": "postal-code"
+    },
+    "label": "postalCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.PhoneNumber",
+      "name": "-1_PersonProfileFields.PhoneNumber",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "autocomplete": "tel-national"
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.School_dropdown-results",
+      "aria-expanded": "true",
+      "aria-activedescendant": "result-selectable_-1_CandProfileFields.School_0",
+      "style": "width: 198px;"
+    },
+    "label": "school"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.Degree_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "degree"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.Major_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "field"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "3",
+      "id": "-1_CandProfileFields.GPA",
+      "name": "-1_CandProfileFields.GPA",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_DecimalField iCIMS_Forms_Qnull form-control",
+      "onchange": "pageDirtyFlag=true; "
+    },
+    "label": "gpa"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.EducationCountry_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "educationCountry"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "\u2014 Type to Search \u2014",
+      "title": "\u2014 Type to Search \u2014",
+      "aria-label": "\u2014 Type to Search \u2014",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "-1_CandProfileFields.EducationState_dropdown-results",
+      "aria-expanded": "true",
+      "style": "width: 198px;"
+    },
+    "label": "educationState"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "data-automation-id": "email",
+      "id": "input-10",
+      "aria-required": "true",
+      "aria-invalid": "false",
+      "autocomplete": "email",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "data-automation-id": "file-upload-input-ref",
+      "type": "file",
+      "class": "css-1hyfx7x"
+    },
+    "label": "fileUpload"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "data-automation-id": "file-upload-input-ref",
+      "type": "file",
+      "class": "css-1hyfx7x"
+    },
+    "label": "fileUpload"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--legalName--firstName",
+      "name": "legalName--firstName",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--legalName--middleName",
+      "name": "legalName--middleName",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "middleName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--legalName--lastName",
+      "name": "legalName--lastName",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "name--preferredCheck",
+      "type": "checkbox",
+      "aria-checked": "true",
+      "name": "preferredCheck",
+      "aria-required": "false",
+      "class": "css-oo35ly"
+    },
+    "label": "havePreferredName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--preferredName--firstName",
+      "name": "preferredName--firstName",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "preferredName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--preferredName--middleName",
+      "name": "preferredName--middleName",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "preferredName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--preferredName--lastName",
+      "name": "preferredName--lastName",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "preferredName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--addressLine1",
+      "name": "addressLine1",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "street"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--city",
+      "name": "city",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "city"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--postalCode",
+      "name": "postalCode",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "postalCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "a6320978-f345-4fc3-a8f6-af016ea4c240",
+      "aria-disabled": "false",
+      "aria-required": "true",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-6c6d106e-5826-44cc-a9d9-8dc127de0f42",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "6c6d106e-5826-44cc-a9d9-8dc127de0f42",
+      "id": "phoneNumber--countryPhoneCode",
+      "class": "css-1rwb1er",
+      "value": ""
+    },
+    "label": "countryCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "phoneNumber--phoneNumber",
+      "name": "phoneNumber",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "phoneNumber--extension",
+      "name": "extension",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "phoneExtension"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-269--jobTitle",
+      "name": "jobTitle",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "jobTitle"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-269--companyName",
+      "name": "companyName",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "company"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-269--location",
+      "name": "location",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "jobLocation"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "workExperience-269--currentlyWorkHere",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "name": "currentlyWorkHere",
+      "aria-required": "false",
+      "class": "css-oo35ly"
+    },
+    "label": "currentJob"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-workExperience-269--startDate",
+      "aria-label": "Month",
+      "aria-valuemax": "12",
+      "aria-valuemin": "1",
+      "aria-valuetext": "MM",
+      "id": "workExperience-269--startDate-dateSectionMonth-input",
+      "data-automation-id": "dateSectionMonth-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuetext": "YYYY",
+      "id": "workExperience-269--startDate-dateSectionYear-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-workExperience-269--endDate",
+      "aria-label": "Month",
+      "aria-valuemax": "12",
+      "aria-valuemin": "1",
+      "aria-valuetext": "MM",
+      "id": "workExperience-269--endDate-dateSectionMonth-input",
+      "data-automation-id": "dateSectionMonth-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuetext": "YYYY",
+      "id": "workExperience-269--endDate-dateSectionYear-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workEndDater"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "education-278--schoolName",
+      "name": "schoolName",
+      "aria-required": "true",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "school"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "a2e4ae5c-df55-40eb-a686-db631fd8386d",
+      "aria-disabled": "false",
+      "aria-required": "false",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-d6ae04a3-6f96-4f66-a38e-9d584ba982b9",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "d6ae04a3-6f96-4f66-a38e-9d584ba982b9",
+      "id": "education-278--fieldOfStudy",
+      "class": "css-1jafa2r",
+      "value": ""
+    },
+    "label": "field"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-education-278--firstYearAttended",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuetext": "YYYY",
+      "id": "education-278--firstYearAttended-dateSectionYear-input",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "educationStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "5972f217-f22f-41b0-94a2-6978c278f091",
+      "aria-disabled": "false",
+      "aria-required": "false",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-83779c94-6a1e-4923-868a-5d41758eee77",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "83779c94-6a1e-4923-868a-5d41758eee77",
+      "id": "skills--skills",
+      "class": "css-1jafa2r",
+      "value": ""
+    },
+    "label": "skills"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": "a74f25ddf6841001f0e052ecb5170000"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "termsAndConditions--acceptTermsAndAgreements",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "name": "acceptTermsAndAgreements",
+      "aria-required": "true",
+      "class": "css-oo35ly"
+    },
+    "label": "tAndC"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": "c17fb198564510000de6e6b35bb80000"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "selfIdentifiedDisabilityData--name",
+      "name": "name",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "fullName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "selfIdentifiedDisabilityData--employeeId",
+      "name": "employeeId",
+      "aria-required": "false",
+      "class": "css-kkm0xd",
+      "value": ""
+    },
+    "label": "employeeId"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-selfIdentifiedDisabilityData--dateSignedOn",
+      "aria-label": "Month",
+      "aria-valuemax": "12",
+      "aria-valuemin": "1",
+      "aria-valuetext": "MM",
+      "id": "selfIdentifiedDisabilityData--dateSignedOn-dateSectionMonth-input",
+      "data-automation-id": "dateSectionMonth-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "todaysDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Day",
+      "aria-valuemax": "31",
+      "aria-valuemin": "1",
+      "aria-valuetext": "DD",
+      "id": "selfIdentifiedDisabilityData--dateSignedOn-dateSectionDay-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionDay-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "todaysDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuetext": "YYYY",
+      "id": "selfIdentifiedDisabilityData--dateSignedOn-dateSectionYear-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "todaysDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "64cbff5f364f10000ae7a421cf210000-disabilityStatus",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "aria-required": "false",
+      "class": "css-oo35ly"
+    },
+    "label": "disability"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "64cbff5f364f10000aeec521b4ec0000-disabilityStatus",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "aria-required": "false",
+      "class": "css-oo35ly"
+    },
+    "label": "disability"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "64cbff5f364f10000af3af293a050000-disabilityStatus",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "aria-required": "false",
+      "class": "css-oo35ly"
+    },
+    "label": "disability"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "first_name",
+      "name": "job_application[first_name]",
+      "aria-required": "true",
+      "maxlength": "255",
+      "autocomplete": "given-name"
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "last_name",
+      "name": "job_application[last_name]",
+      "aria-required": "true",
+      "maxlength": "255",
+      "autocomplete": "family-name"
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "email",
+      "name": "job_application[email]",
+      "aria-required": "true",
+      "maxlength": "255",
+      "autocomplete": "email"
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "phone",
+      "name": "job_application[phone]",
+      "maxlength": "255",
+      "autocomplete": "tel",
+      "required": "required",
+      "aria-required": "true"
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "name": "job_application[answers_attributes][0][text_value]",
+      "id": "job_application_answers_attributes_0_text_value",
+      "aria-required": "false",
+      "maxlength": "255",
+      "autocomplete": "custom-question-linkedin-profile"
+    },
+    "label": "linkedIn"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "name": "job_application[answers_attributes][1][text_value]",
+      "id": "job_application_answers_attributes_1_text_value",
+      "aria-required": "false",
+      "maxlength": "255",
+      "autocomplete": "custom-question-website"
+    },
+    "label": "website"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select2-focusser select2-offscreen",
+      "type": "text",
+      "aria-haspopup": "true",
+      "role": "button",
+      "aria-labelledby": "select2-chosen-1",
+      "id": "s2id_autogen1"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "autocapitalize": "off",
+      "spellcheck": "false",
+      "class": "select2-input",
+      "role": "combobox",
+      "aria-expanded": "true",
+      "aria-autocomplete": "list",
+      "aria-owns": "select2-results-1",
+      "id": "s2id_autogen1_search",
+      "placeholder": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[answers_attributes][2][boolean_value]",
+      "id": "job_application_answers_attributes_2_boolean_value",
+      "aria-required": "true",
+      "tabindex": "-1",
+      "title": "",
+      "style": "display: none;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "autocapitalize": "off",
+      "spellcheck": "false",
+      "class": "select2-input",
+      "role": "combobox",
+      "aria-expanded": "true",
+      "aria-autocomplete": "list",
+      "aria-owns": "select2-results-2",
+      "id": "s2id_autogen2_search",
+      "placeholder": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[answers_attributes][3][answer_selected_options_attributes][3][question_option_id]",
+      "id": "job_application_answers_attributes_3_answer_selected_options_attributes_3_question_option_id",
+      "aria-required": "true",
+      "style": "width: 200px; display: none;",
+      "tabindex": "-1",
+      "title": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select2-focusser select2-offscreen",
+      "type": "text",
+      "aria-haspopup": "true",
+      "role": "button",
+      "aria-labelledby": "select2-chosen-3",
+      "id": "s2id_autogen3"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "autocapitalize": "off",
+      "spellcheck": "false",
+      "class": "select2-input",
+      "role": "combobox",
+      "aria-expanded": "true",
+      "aria-autocomplete": "list",
+      "aria-owns": "select2-results-3",
+      "id": "s2id_autogen3_search",
+      "placeholder": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[answers_attributes][4][boolean_value]",
+      "id": "job_application_answers_attributes_4_boolean_value",
+      "aria-required": "true",
+      "tabindex": "-1",
+      "title": "",
+      "style": "display: none;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select2-focusser select2-offscreen",
+      "type": "text",
+      "aria-haspopup": "true",
+      "role": "button",
+      "aria-labelledby": "select2-chosen-4",
+      "id": "s2id_autogen4"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "autocapitalize": "off",
+      "spellcheck": "false",
+      "class": "select2-input",
+      "role": "combobox",
+      "aria-expanded": "true",
+      "aria-autocomplete": "list",
+      "aria-owns": "select2-results-4",
+      "id": "s2id_autogen4_search",
+      "placeholder": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[answers_attributes][5][boolean_value]",
+      "id": "job_application_answers_attributes_5_boolean_value",
+      "aria-required": "true",
+      "tabindex": "-1",
+      "title": "",
+      "style": "display: none;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select2-focusser select2-offscreen",
+      "type": "text",
+      "aria-haspopup": "true",
+      "role": "button",
+      "aria-labelledby": "select2-chosen-5",
+      "id": "s2id_autogen5"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "autocapitalize": "off",
+      "spellcheck": "false",
+      "class": "select2-input",
+      "role": "combobox",
+      "aria-expanded": "true",
+      "aria-autocomplete": "list",
+      "aria-owns": "select2-results-5",
+      "id": "s2id_autogen5_search",
+      "placeholder": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[answers_attributes][6][boolean_value]",
+      "id": "job_application_answers_attributes_6_boolean_value",
+      "aria-required": "true",
+      "tabindex": "-1",
+      "title": "",
+      "style": "display: none;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "name": "job_application[answers_attributes][7][text_value]",
+      "id": "job_application_answers_attributes_7_text_value",
+      "aria-required": "false",
+      "maxlength": "255",
+      "autocomplete": "custom-question-if-yes-please-state-their-name-the-department-or-studio-they-work-for-and-their-job-title-if-you-know-it"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "select2-focusser select2-offscreen",
+      "type": "text",
+      "aria-haspopup": "true",
+      "role": "button",
+      "aria-labelledby": "select2-chosen-6",
+      "id": "s2id_autogen6"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "autocomplete": "off",
+      "autocorrect": "off",
+      "autocapitalize": "off",
+      "spellcheck": "false",
+      "class": "select2-input",
+      "role": "combobox",
+      "aria-expanded": "true",
+      "aria-autocomplete": "list",
+      "aria-owns": "select2-results-6",
+      "id": "s2id_autogen6_search",
+      "placeholder": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "name": "job_application[answers_attributes][8][boolean_value]",
+      "id": "job_application_answers_attributes_8_boolean_value",
+      "aria-required": "true",
+      "tabindex": "-1",
+      "title": "",
+      "style": "display: none;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147150004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147151004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147152004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147153004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147154004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147155004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147156004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147157004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147158004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147159004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147160004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147161004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147162004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147163004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147164004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147165004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147166004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147167004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147168004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147169004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147170004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147171004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147172004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147173004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147174004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147175004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147176004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147177004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147178004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147179004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147180004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147181004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147182004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147183004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147184004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147185004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147186004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147480004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147194004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147195004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147196004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147197004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147198004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147199004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147200004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147201004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147202004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147203004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147204004",
+      "class": "single-select"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "name": "job_application[demographic_answers][][answer_options][][answer_option_id]",
+      "value": "4147205004",
+      "class": "single-select decline-answer-checkbox"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "security_code",
+      "name": "security_code",
+      "type": "text",
+      "aria-describedby": "security_code_description",
+      "disabled": "",
+      "autocomplete": "one-time-code"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "button",
+      "value": "Submit Application",
+      "id": "submit_app",
+      "class": "button"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "file",
+      "name": "file",
+      "tabindex": "-1"
+    },
+    "label": "fileUpload"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "file",
+      "name": "file",
+      "tabindex": "-1"
+    },
+    "label": "fileUpload"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "data-automation-id": "email",
+      "id": "input-9",
+      "aria-required": "true",
+      "aria-invalid": "false",
+      "autocomplete": "email",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "password",
+      "data-automation-id": "password",
+      "id": "input-10",
+      "aria-required": "true",
+      "autocomplete": "current-password",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "data-automation-id": "beecatcher",
+      "id": "85b0874b-1238-420a-82ed-dad4257960fe",
+      "name": "website",
+      "type": "text",
+      "class": "css-umjazw"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "data-automation-id": "file-upload-input-ref",
+      "type": "file",
+      "class": "css-1hyfx7x"
+    },
+    "label": "fileUpload"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "7980ddbc-0a99-44e6-8fff-27bf79940355",
+      "aria-disabled": "false",
+      "aria-required": "true",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-e6fc1dce-98c8-46f7-b507-efb189da882f",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "e6fc1dce-98c8-46f7-b507-efb189da882f",
+      "id": "source--source",
+      "class": "css-1jafa2r",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "c7xc5",
+      "name": "candidateIsPreviousWorker",
+      "type": "radio",
+      "aria-checked": "false",
+      "class": "css-47jh9j",
+      "value": "true"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "c7xc6",
+      "name": "candidateIsPreviousWorker",
+      "type": "radio",
+      "aria-checked": "false",
+      "class": "css-47jh9j",
+      "value": "false"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--legalName--firstName",
+      "name": "legalName--firstName",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "name--legalName--lastName",
+      "name": "legalName--lastName",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "lastName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "name--preferredCheck",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "name": "preferredCheck",
+      "aria-required": "false",
+      "class": "css-10spxif"
+    },
+    "label": "havePrefferedName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--addressLine1",
+      "name": "addressLine1",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "street"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--addressLine2",
+      "name": "addressLine2",
+      "aria-required": "false",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "street2"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--city",
+      "name": "city",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "city"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": "c66d738416b74fb180376cf59cc7ec8f"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--postalCode",
+      "name": "postalCode",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "postalCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "address--regionSubdivision1",
+      "name": "regionSubdivision1",
+      "aria-required": "false",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "county"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": "5a72a211d621102a1093bde0d8d50018"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "be70ab06-5525-4875-a37c-e6d688aaf62b",
+      "aria-disabled": "false",
+      "aria-required": "true",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-35189b31-8a67-4e23-aafd-8072382be4af",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "35189b31-8a67-4e23-aafd-8072382be4af",
+      "id": "phoneNumber--countryPhoneCode",
+      "class": "css-1rwb1er",
+      "value": ""
+    },
+    "label": "countryCode"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "phoneNumber--phoneNumber",
+      "name": "phoneNumber",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "phoneNumber--extension",
+      "name": "extension",
+      "aria-required": "false",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "phoneExtension"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-80--jobTitle",
+      "name": "jobTitle",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "jobTitle"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-80--companyName",
+      "name": "companyName",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "company"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-80--location",
+      "name": "location",
+      "aria-required": "false",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "jobLocation"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "workExperience-80--currentlyWorkHere",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "name": "currentlyWorkHere",
+      "aria-required": "false",
+      "class": "css-10spxif"
+    },
+    "label": "currentJob"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-workExperience-80--startDate",
+      "aria-label": "Month",
+      "aria-valuemax": "12",
+      "aria-valuemin": "1",
+      "aria-valuenow": "7",
+      "aria-valuetext": "7",
+      "id": "workExperience-80--startDate-dateSectionMonth-input",
+      "data-automation-id": "dateSectionMonth-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuenow": "2024",
+      "aria-valuetext": "2024",
+      "id": "workExperience-80--startDate-dateSectionYear-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-workExperience-80--endDate",
+      "aria-label": "Month",
+      "aria-valuemax": "12",
+      "aria-valuemin": "1",
+      "aria-valuenow": "12",
+      "aria-valuetext": "12",
+      "id": "workExperience-80--endDate-dateSectionMonth-input",
+      "data-automation-id": "dateSectionMonth-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuenow": "2024",
+      "aria-valuetext": "2024",
+      "id": "workExperience-80--endDate-dateSectionYear-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-81--jobTitle",
+      "name": "jobTitle",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "jobTitle"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-81--companyName",
+      "name": "companyName",
+      "aria-required": "true",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "company"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "workExperience-81--location",
+      "name": "location",
+      "aria-required": "false",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "jobLocation"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "workExperience-81--currentlyWorkHere",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "name": "currentlyWorkHere",
+      "aria-required": "false",
+      "class": "css-10spxif"
+    },
+    "label": "currentJob"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-workExperience-81--startDate",
+      "aria-label": "Month",
+      "aria-valuemax": "12",
+      "aria-valuemin": "1",
+      "aria-valuenow": "7",
+      "aria-valuetext": "7",
+      "id": "workExperience-81--startDate-dateSectionMonth-input",
+      "data-automation-id": "dateSectionMonth-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuenow": "2023",
+      "aria-valuetext": "2023",
+      "id": "workExperience-81--startDate-dateSectionYear-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-describedby": "helpText-workExperience-81--endDate",
+      "aria-label": "Month",
+      "aria-valuemax": "12",
+      "aria-valuemin": "1",
+      "aria-valuenow": "12",
+      "aria-valuetext": "12",
+      "id": "workExperience-81--endDate-dateSectionMonth-input",
+      "data-automation-id": "dateSectionMonth-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "role": "spinbutton",
+      "aria-label": "Year",
+      "aria-valuemax": "9999",
+      "aria-valuemin": "1",
+      "aria-valuenow": "2023",
+      "aria-valuetext": "2023",
+      "id": "workExperience-81--endDate-dateSectionYear-input",
+      "tabindex": "-1",
+      "data-automation-id": "dateSectionYear-input",
+      "class": "css-72im0m",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "4c218888-31e2-46d7-b0e2-cc02a5a7e2d7",
+      "aria-disabled": "false",
+      "aria-required": "true",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-d974a9e8-25b8-4020-b6e1-d1c4160bfa84",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "d974a9e8-25b8-4020-b6e1-d1c4160bfa84",
+      "id": "education-118--school",
+      "class": "css-1rwb1er",
+      "value": ""
+    },
+    "label": "school"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "ea5c9430-22e5-4fda-999c-9b95db150a05",
+      "aria-disabled": "false",
+      "aria-required": "false",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-5e0c3e5c-d538-49b0-a0de-621fc72528b3",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "5e0c3e5c-d538-49b0-a0de-621fc72528b3",
+      "id": "education-118--fieldOfStudy",
+      "class": "css-1rwb1er",
+      "value": ""
+    },
+    "label": "field"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "dir": "ltr",
+      "placeholder": "Search",
+      "aria-invalid": "false",
+      "aria-describedby": "560e0317-2936-42ab-a1b7-3671a2d7bde7",
+      "aria-disabled": "false",
+      "aria-required": "false",
+      "autocomplete": "off",
+      "tabindex": "0",
+      "data-uxi-element-id": "selectinput-3ee87480-9b5b-40da-9ea7-d43cbac7e8df",
+      "data-uxi-widget-type": "selectinput",
+      "data-uxi-multiselect-id": "3ee87480-9b5b-40da-9ea7-d43cbac7e8df",
+      "id": "skills--skills",
+      "class": "css-1jafa2r",
+      "value": ""
+    },
+    "label": "skills"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "data-automation-id": "file-upload-input-ref",
+      "type": "file",
+      "multiple": "",
+      "class": "css-1hyfx7x"
+    },
+    "label": "fileUpload"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "socialNetworkAccounts--linkedInAccount",
+      "name": "linkedInAccount",
+      "aria-required": "false",
+      "class": "css-k0yg7w",
+      "value": ""
+    },
+    "label": "linkedIn"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "css-77hcv",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "termsAndConditions--acceptTermsAndAgreements",
+      "type": "checkbox",
+      "aria-checked": "false",
+      "name": "acceptTermsAndAgreements",
+      "aria-required": "true",
+      "class": "css-10spxif"
+    },
+    "label": "tAndC"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "name": "username",
+      "value": "",
+      "autocomplete": "username",
+      "readonly": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "class": "input c0135f5d4 c371d077c",
+      "name": "password",
+      "id": "password",
+      "type": "password",
+      "required": "",
+      "autocomplete": "current-password",
+      "autocapitalize": "none",
+      "spellcheck": "false",
+      "autofocus": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "email",
+      "autocomplete": "email",
+      "id": "email",
+      "name": "css_loginName",
+      "class": "form-control",
+      "value": "",
+      "autofocus": "",
+      "aria-describedby": "iCIMS_ErrorMessage_login"
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "id": "accept_gdpr",
+      "name": "accept_gdpr",
+      "value": "1",
+      "aria-required": "true",
+      "aria-describedby": "icims_accept_gdpr_desc"
+    },
+    "label": "tAndC"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "enterEmailSubmitButton",
+      "type": "submit",
+      "class": "iCIMS_PrimaryButton gdprAnswerSubmitButton",
+      "value": "Next",
+      "disabled": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "email",
+      "autocomplete": "email",
+      "id": "email",
+      "name": "css_loginName",
+      "class": "form-control",
+      "value": "",
+      "autofocus": "",
+      "aria-describedby": "iCIMS_ErrorMessage_login"
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "checkbox",
+      "id": "accept_gdpr",
+      "name": "accept_gdpr",
+      "value": "1",
+      "aria-required": "true",
+      "aria-describedby": "icims_accept_gdpr_desc"
+    },
+    "label": "tAndC"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "id": "enterEmailSubmitButton",
+      "type": "submit",
+      "class": "iCIMS_PrimaryButton gdprAnswerSubmitButton",
+      "value": "Next",
+      "disabled": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "file",
+      "id": "PortalProfileFields.Resume_File",
+      "name": "PortalProfileFields.Resume_File",
+      "tabindex": "-1",
+      "aria-labelledby": "label_for_PortalProfileFields.Resume_File label_PortalProfileFields.Resume_File",
+      "onclick": "event.stopPropagation();",
+      "onchange": "pageDirtyFlag=true;icims_setFileFieldValue('PortalProfileFields.Resume', document.getElementById('PortalProfileFields.Resume_File').value, '', '', false, 'local');",
+      "onfocus": "$(this).parent().addClass('focused');",
+      "onblur": "$(this).parent().removeClass('focused');",
+      "validtypes": "text/html,image/jpeg,image/tiff,image/bmp,image/gif,application/rtf,image/png,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/tiff,text/plain,application/gzip,application/pdf,application/msword,image/jpeg,text/html,application/vnd.oasis.opendocument.text"
+    },
+    "label": "resume"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "PersonProfileFields.Login",
+      "name": "PersonProfileFields.Login",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "maxlength": "128",
+      "autocomplete": "username",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "password",
+      "autocomplete": "new-password",
+      "id": "PersonProfileFields.Password",
+      "name": "PersonProfileFields.Password",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_PasswordField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;handlePasswordFieldChange(event);",
+      "maxlength": "128",
+      "value": "",
+      "onfocus": "if (this.value == '********') { this.value=''; }",
+      "onblur": " var callHandlePasswordFieldChange = true; if (this.value == null || this.value == '') { this.value='********'; hidePwdValidation(this.id, event); callHandlePasswordFieldChange = false;} if (callHandlePasswordFieldChange) { handlePasswordFieldChange(event); } ",
+      "onkeyup": "handlePasswordFieldChange(event);",
+      "title": "Minimum 8 characters, 1 alphabetic, 1 lowercase, 1 uppercase, 1 numeric, 1 special character(s)",
+      "aria-label": "Password: Minimum 8 characters, 1 alphabetic, 1 lowercase, 1 uppercase, 1 numeric, 1 special character(s)",
+      "aria-required": "true",
+      "i_required": "true"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "password",
+      "autocomplete": "new-password",
+      "id": "PersonProfileFields.Password_Confirm",
+      "name": "PersonProfileFields.Password_Confirm",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_PasswordField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;handlePasswordConfirmFieldChange(event);",
+      "maxlength": "128",
+      "value": "",
+      "onfocus": "if (this.value == '********') { this.value=''; }",
+      "onblur": " var callHandlePasswordConfirmFieldChange = true; if (this.value == null || this.value == '') { this.value='********'; hidePwdConfirmValidation(this.id, event); callHandlePasswordConfirmFieldChange = false;} if (callHandlePasswordConfirmFieldChange) { handlePasswordConfirmFieldChange(event); } ",
+      "onkeyup": "handlePasswordConfirmFieldChange(event);",
+      "title": "Minimum 8 characters, 1 alphabetic, 1 lowercase, 1 uppercase, 1 numeric, 1 special character(s)",
+      "aria-label": "Password (Re-enter): Minimum 8 characters, 1 alphabetic, 1 lowercase, 1 uppercase, 1 numeric, 1 special character(s)",
+      "aria-required": "true",
+      "i_required": "true"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "PersonProfileFields.FirstName",
+      "name": "PersonProfileFields.FirstName",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "192",
+      "autocomplete": "given-name",
+      "value": ""
+    },
+    "label": "firstName"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "rcf2061",
+      "name": "rcf2061",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "PersonProfileFields.LastName",
+      "name": "PersonProfileFields.LastName",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "autocomplete": "family-name",
+      "value": ""
+    },
+    "label": "Adade"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "rcf2169",
+      "name": "rcf2169",
+      "data-label": "Suffix",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull form-control dropdown-hide",
+      "aria-label": "Suffix",
+      "list": "lists.customfields_lists",
+      "type": "2169",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "",
+      "hash": "cf0fb75ac1a3028f773ec016e8249a012639139c92b76145641144e0b5360f16"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search dropdown-invisible",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-hidden": "true",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "email",
+      "id": "PersonProfileFields.Email",
+      "name": "PersonProfileFields.Email",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_EmailField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "maxlength": "128",
+      "autocomplete": "email",
+      "value": ""
+    },
+    "label": "email"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1902206_PersonProfileFields.PhoneType",
+      "name": "1902206_PersonProfileFields.PhoneType",
+      "data-label": "Type",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "aria-label": "Type",
+      "bgtparse": "true",
+      "list": "lists.phone_type",
+      "type": "3025",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "aria-required": "true",
+      "i_required": "true",
+      "icimsdropdown-enabled": "0",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "15145",
+      "hash": "9f0cdb692c09b4846d47a0ee0a55c388d245eee3a2a7f4b43e3e64b2cb221d11"
+    },
+    "label": "deviceType"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "1902206_PersonProfileFields.PhoneNumber",
+      "name": "1902206_PersonProfileFields.PhoneNumber",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "autocomplete": "tel-national",
+      "value": ""
+    },
+    "label": "phone"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "rcf2060",
+      "name": "rcf2060",
+      "data-label": "I authorize Spectrum to contact me about my application, career opportunities and events via text messaging. I further understand that if I no longer want Spectrum to contact me via text messaging, I can opt out by updating my Candidate Profile.*",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control dropdown-hide",
+      "aria-label": "I authorize Spectrum to contact me about my application, career opportunities and events via text messaging. I further understand that if I no longer want Spectrum to contact me via text messaging, I can opt out by updating my Candidate Profile.*",
+      "list": "lists.customfields_lists",
+      "type": "2060",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "i_required": "true",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "31637",
+      "hash": "12de3e5c4880cb5ac530689d93eb0154d063b674d8582a1bb0f7b0bd90c81914"
+    },
+    "label": "tAndC"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1705767_PersonProfileFields.AddressType",
+      "name": "1705767_PersonProfileFields.AddressType",
+      "data-label": "Type",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "aria-label": "Type",
+      "bgtparse": "true",
+      "list": "lists.address_type",
+      "type": "3029",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "aria-required": "true",
+      "i_required": "true",
+      "icimsdropdown-enabled": "0",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "15149",
+      "hash": "d7c30a1f5333f14c30df2b1796180c53e21dee0ddb2c9f0fdcbd923e49d06070"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "1705767_PersonProfileFields.AddressStreet1",
+      "name": "1705767_PersonProfileFields.AddressStreet1",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "autocomplete": "street-address",
+      "value": ""
+    },
+    "label": "street"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "1705767_PersonProfileFields.AddressStreet2",
+      "name": "1705767_PersonProfileFields.AddressStreet2",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "autocomplete": "address-line2"
+    },
+    "label": "street2"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "1705767_PersonProfileFields.AddressCity",
+      "name": "1705767_PersonProfileFields.AddressCity",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "autocomplete": "address-level2",
+      "value": ""
+    },
+    "label": "city"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "1705767_PersonProfileFields.AddressZip",
+      "name": "1705767_PersonProfileFields.AddressZip",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "16",
+      "autocomplete": "postal-code",
+      "value": ""
+    },
+    "label": "postalCode "
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1705767_PersonProfileFields.AddressCountry",
+      "name": "1705767_PersonProfileFields.AddressCountry",
+      "data-label": "Country",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_IdDropDown iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control dropdown-hide",
+      "onchange": "pageDirtyFlag=true;icimsChangeParent('1705767_PersonProfileFields.AddressCountry', '1705767_PersonProfileFields.AddressState')",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "12781",
+      "data-ddd-child-link": "PersonProfileFields.AddressState",
+      "data-ddd-message": "Please select a country",
+      "data-ddd-no-children": "No states available",
+      "bgtparse": "true",
+      "i_required": "true",
+      "aria-describedby": "1705767_PersonProfileFields.AddressCountry_error",
+      "role": "listbox",
+      "hash": "2d43af0bb2f3dff3aba4c3adefe8f8def36066c622379ebc0a4ffd373bbc6423"
+    },
+    "label": "country"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "1705767_PersonProfileFields.AddressCountry_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "country"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1705767_PersonProfileFields.AddressState",
+      "name": "1705767_PersonProfileFields.AddressState",
+      "data-label": "State/Province",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_IdDropDown iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control dropdown-hide",
+      "onchange": "pageDirtyFlag=true;",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "12805",
+      "data-ddd-parent-link": "PersonProfileFields.AddressCountry",
+      "bgtparse": "true",
+      "i_required": "true",
+      "aria-describedby": "1705767_PersonProfileFields.AddressState_error",
+      "role": "listbox",
+      "hash": "bcd5688ff903aad5ccd659a1f29b19058e355e132b968732848067121394692b"
+    },
+    "label": "state"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "1705767_PersonProfileFields.AddressState_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "state"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1794836_CandProfileFields.School",
+      "name": "1794836_CandProfileFields.School",
+      "data-label": "School",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull form-control dropdown-hide",
+      "aria-label": "School",
+      "bgtparse": "true",
+      "list": "lists.school",
+      "type": "3081",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "53631",
+      "hash": "d723ad2ef7f17415ee6d8c8e4d1d1d53771c8bca82d4d8cc5c70d7b9c690d673"
+    },
+    "label": "school"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "1794836_CandProfileFields.School_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "school"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "1794836_CandProfileFields.OtherSchool",
+      "name": "1794836_CandProfileFields.OtherSchool",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "bgtparse": "true",
+      "maxlength": "256"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1794836_CandProfileFields.Degree",
+      "name": "1794836_CandProfileFields.Degree",
+      "data-label": "Degree",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control dropdown-hide",
+      "aria-label": "Degree",
+      "bgtparse": "true",
+      "list": "lists.school.degree",
+      "type": "3081",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "i_required": "true",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "71146",
+      "hash": "17fdb6a880ccc72a5c52a962cc2ae01c27c46bf28ddaeaca60361cabb73ee11b"
+    },
+    "label": "degree"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "1794836_CandProfileFields.Degree_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "field"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1794836_CandProfileFields.Major",
+      "name": "1794836_CandProfileFields.Major",
+      "data-label": "Major",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull form-control dropdown-hide",
+      "aria-label": "Major",
+      "bgtparse": "true",
+      "list": "lists.school.major",
+      "type": "3081",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "13990",
+      "hash": "be17061208de3c9ef27458ef42d2265b97b3842dcee84be054cbddf8e67f4261"
+    },
+    "label": "field"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "1794836_CandProfileFields.Major_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "graduated"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "1794836_CandProfileFields.IsGraduated",
+      "name": "1794836_CandProfileFields.IsGraduated",
+      "data-label": "Did You Graduate?",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull form-control",
+      "aria-label": "Did You Graduate?",
+      "bgtparse": "true",
+      "list": "lists.customfields_lists",
+      "type": "3081",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "icimsdropdown-enabled": "0",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "20466",
+      "hash": "4937ff8a395e72af29fa3d7ae467b261ba9179d3f5a5cf01659be977dd9ec743"
+    },
+    "label": "graduated"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "4773248_PersonProfileFields.rcf3212",
+      "name": "4773248_PersonProfileFields.rcf3212",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "value": ""
+    },
+    "label": "company"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "4773248_PersonProfileFields.rcf3213",
+      "name": "4773248_PersonProfileFields.rcf3213",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "value": ""
+    },
+    "label": "jobTitle"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773248_PersonProfileFields.rcf3217",
+      "name": "4773248_PersonProfileFields.rcf3217",
+      "data-label": "State",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_IdDropDown iCIMS_Forms_Qnull form-control dropdown-hide",
+      "onchange": "pageDirtyFlag=true;",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "12806",
+      "data-ddd-parent-link": "PersonProfileFields.rcf3218",
+      "bgtparse": "true",
+      "hash": "aea055437d5e34dd27b460d0dc9660819a29ac430fc27d9fcf735063db20e8bd"
+    },
+    "label": "state"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "4773248_PersonProfileFields.rcf3217_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773248_PersonProfileFields.rcf3214_Month",
+      "name": "4773248_PersonProfileFields.rcf3214_Month",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773248_PersonProfileFields.rcf3214 label_4773248_PersonProfileFields.rcf3214_Month",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_MonthInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773248_PersonProfileFields.rcf3214_Date",
+      "name": "4773248_PersonProfileFields.rcf3214_Date",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773248_PersonProfileFields.rcf3214 label_4773248_PersonProfileFields.rcf3214_Date",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_DayInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "6",
+      "maxlength": "4",
+      "id": "4773248_PersonProfileFields.rcf3214_Year",
+      "name": "4773248_PersonProfileFields.rcf3214_Year",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773248_PersonProfileFields.rcf3214 label_4773248_PersonProfileFields.rcf3214_Year",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_YearInput form-control",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773248_PersonProfileFields.rcf3215_Month",
+      "name": "4773248_PersonProfileFields.rcf3215_Month",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773248_PersonProfileFields.rcf3215 label_4773248_PersonProfileFields.rcf3215_Month",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_MonthInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773248_PersonProfileFields.rcf3215_Date",
+      "name": "4773248_PersonProfileFields.rcf3215_Date",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773248_PersonProfileFields.rcf3215 label_4773248_PersonProfileFields.rcf3215_Date",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_DayInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "6",
+      "maxlength": "4",
+      "id": "4773248_PersonProfileFields.rcf3215_Year",
+      "name": "4773248_PersonProfileFields.rcf3215_Year",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773248_PersonProfileFields.rcf3215 label_4773248_PersonProfileFields.rcf3215_Year",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_YearInput form-control",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773248_PersonProfileFields.rcf3269",
+      "name": "4773248_PersonProfileFields.rcf3269",
+      "data-label": "Is this your current employer?",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull form-control dropdown-hide",
+      "aria-label": "Is this your current employer?",
+      "bgtparse": "true",
+      "list": "lists.customfields_lists",
+      "type": "3211",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "19374",
+      "hash": "f222f1718a47e88d43caf9814e5eb62e085500270d6d02397e40d752d888d247"
+    },
+    "label": "currentJob"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search dropdown-invisible",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-hidden": "true",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "4773249_PersonProfileFields.rcf3212",
+      "name": "4773249_PersonProfileFields.rcf3212",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "4773249_PersonProfileFields.rcf3213",
+      "name": "4773249_PersonProfileFields.rcf3213",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773249_PersonProfileFields.rcf3217",
+      "name": "4773249_PersonProfileFields.rcf3217",
+      "data-label": "State",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_IdDropDown iCIMS_Forms_Qnull form-control dropdown-hide",
+      "onchange": "pageDirtyFlag=true;",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "12799",
+      "data-ddd-parent-link": "PersonProfileFields.rcf3218",
+      "bgtparse": "true",
+      "hash": "aea055437d5e34dd27b460d0dc9660819a29ac430fc27d9fcf735063db20e8bd"
+    },
+    "label": "state"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "4773249_PersonProfileFields.rcf3217_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773249_PersonProfileFields.rcf3214_Month",
+      "name": "4773249_PersonProfileFields.rcf3214_Month",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773249_PersonProfileFields.rcf3214 label_4773249_PersonProfileFields.rcf3214_Month",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_MonthInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773249_PersonProfileFields.rcf3214_Date",
+      "name": "4773249_PersonProfileFields.rcf3214_Date",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773249_PersonProfileFields.rcf3214 label_4773249_PersonProfileFields.rcf3214_Date",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_DayInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "6",
+      "maxlength": "4",
+      "id": "4773249_PersonProfileFields.rcf3214_Year",
+      "name": "4773249_PersonProfileFields.rcf3214_Year",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773249_PersonProfileFields.rcf3214 label_4773249_PersonProfileFields.rcf3214_Year",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_YearInput form-control",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773249_PersonProfileFields.rcf3215_Month",
+      "name": "4773249_PersonProfileFields.rcf3215_Month",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773249_PersonProfileFields.rcf3215 label_4773249_PersonProfileFields.rcf3215_Month",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_MonthInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773249_PersonProfileFields.rcf3215_Date",
+      "name": "4773249_PersonProfileFields.rcf3215_Date",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773249_PersonProfileFields.rcf3215 label_4773249_PersonProfileFields.rcf3215_Date",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_DayInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "6",
+      "maxlength": "4",
+      "id": "4773249_PersonProfileFields.rcf3215_Year",
+      "name": "4773249_PersonProfileFields.rcf3215_Year",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773249_PersonProfileFields.rcf3215 label_4773249_PersonProfileFields.rcf3215_Year",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_YearInput form-control",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773249_PersonProfileFields.rcf3269",
+      "name": "4773249_PersonProfileFields.rcf3269",
+      "data-label": "Is this your current employer?",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull form-control dropdown-hide",
+      "aria-label": "Is this your current employer?",
+      "bgtparse": "true",
+      "list": "lists.customfields_lists",
+      "type": "3211",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "19374",
+      "hash": "f222f1718a47e88d43caf9814e5eb62e085500270d6d02397e40d752d888d247"
+    },
+    "label": "currentJob"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search dropdown-invisible",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-hidden": "true",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "4773250_PersonProfileFields.rcf3212",
+      "name": "4773250_PersonProfileFields.rcf3212",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "128",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "4773250_PersonProfileFields.rcf3213",
+      "name": "4773250_PersonProfileFields.rcf3213",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-required": "true",
+      "i_required": "true",
+      "bgtparse": "true",
+      "maxlength": "64",
+      "value": ""
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773250_PersonProfileFields.rcf3217",
+      "name": "4773250_PersonProfileFields.rcf3217",
+      "data-label": "State",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_IdDropDown iCIMS_Forms_Qnull form-control dropdown-hide",
+      "onchange": "pageDirtyFlag=true;",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "1",
+      "icimsdropdown-selected": "12805",
+      "data-ddd-parent-link": "PersonProfileFields.rcf3218",
+      "bgtparse": "true",
+      "hash": "aea055437d5e34dd27b460d0dc9660819a29ac430fc27d9fcf735063db20e8bd"
+    },
+    "label": "state"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-autocomplete": "list",
+      "aria-controls": "4773250_PersonProfileFields.rcf3217_dropdown-results",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773250_PersonProfileFields.rcf3214_Month",
+      "name": "4773250_PersonProfileFields.rcf3214_Month",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773250_PersonProfileFields.rcf3214 label_4773250_PersonProfileFields.rcf3214_Month",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_MonthInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773250_PersonProfileFields.rcf3214_Date",
+      "name": "4773250_PersonProfileFields.rcf3214_Date",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773250_PersonProfileFields.rcf3214 label_4773250_PersonProfileFields.rcf3214_Date",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_DayInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "6",
+      "maxlength": "4",
+      "id": "4773250_PersonProfileFields.rcf3214_Year",
+      "name": "4773250_PersonProfileFields.rcf3214_Year",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773250_PersonProfileFields.rcf3214 label_4773250_PersonProfileFields.rcf3214_Year",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_YearInput form-control",
+      "value": ""
+    },
+    "label": "workStartDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773250_PersonProfileFields.rcf3215_Month",
+      "name": "4773250_PersonProfileFields.rcf3215_Month",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773250_PersonProfileFields.rcf3215 label_4773250_PersonProfileFields.rcf3215_Month",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_MonthInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773250_PersonProfileFields.rcf3215_Date",
+      "name": "4773250_PersonProfileFields.rcf3215_Date",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773250_PersonProfileFields.rcf3215 label_4773250_PersonProfileFields.rcf3215_Date",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_DayInput iCIMS_Forms_DropDown form-control"
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "size": "6",
+      "maxlength": "4",
+      "id": "4773250_PersonProfileFields.rcf3215_Year",
+      "name": "4773250_PersonProfileFields.rcf3215_Year",
+      "onchange": "pageDirtyFlag=true;",
+      "aria-labelledby": "label_4773250_PersonProfileFields.rcf3215 label_4773250_PersonProfileFields.rcf3215_Year",
+      "class": "iCIMS_Forms_Global iCIMS_Forms_YearInput form-control",
+      "value": ""
+    },
+    "label": "workEndDate"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "4773250_PersonProfileFields.rcf3269",
+      "name": "4773250_PersonProfileFields.rcf3269",
+      "data-label": "Is this your current employer?",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull form-control dropdown-hide",
+      "aria-label": "Is this your current employer?",
+      "bgtparse": "true",
+      "list": "lists.customfields_lists",
+      "type": "3211",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "19374",
+      "hash": "f222f1718a47e88d43caf9814e5eb62e085500270d6d02397e40d752d888d247"
+    },
+    "label": "currentJob"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search dropdown-invisible",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-hidden": "true",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "id": "-1_PersonProfileFields.rcf2014",
+      "name": "-1_PersonProfileFields.rcf2014",
+      "class": "iCIMS_Forms_Global customFieldContainer iCIMS_Forms_TextField iCIMS_Forms_Qnull form-control",
+      "onchange": "pageDirtyFlag=true;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "file",
+      "id": "-1_PersonProfileFields.rcf2015_File",
+      "name": "-1_PersonProfileFields.rcf2015_File",
+      "tabindex": "-1",
+      "aria-labelledby": "label_for_-1_PersonProfileFields.rcf2015_File label_-1_PersonProfileFields.rcf2015_File",
+      "onclick": "event.stopPropagation();",
+      "onchange": "pageDirtyFlag=true;icims_setFileFieldValue('-1_PersonProfileFields.rcf2015', document.getElementById('-1_PersonProfileFields.rcf2015_File').value, '', '', false, 'local');",
+      "onfocus": "$(this).parent().addClass('focused');",
+      "onblur": "$(this).parent().removeClass('focused');",
+      "validtypes": "application/vnd.openxmlformats-officedocument.wordprocessingml.template,image/jpeg,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/msword,image/png,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,text/plain,application/pdf,application/vnd.ms-powerpoint,application/msword,image/jpeg,application/vnd.ms-excel"
+    },
+    "label": "fileUpload"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "rcf2100",
+      "name": "rcf2100",
+      "data-label": "WOTC Acknowledgement",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control dropdown-hide",
+      "aria-label": "WOTC Acknowledgement",
+      "list": "lists.customfields_lists",
+      "type": "2100",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "i_required": "true",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "42436",
+      "hash": "7f644f5b2bb89822372280efd726f49fa54095c1a8654f209b7833807c97e17e"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search dropdown-invisible",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-hidden": "true",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "select",
+    "attributes": {
+      "id": "rcf2101",
+      "name": "rcf2101",
+      "data-label": "Once you have completed your review, please select “I agree” below, confirming that you have read and understand the Mutual Arbitration Agreement and agree to be bound by the same.",
+      "class": " iCIMS_Forms_Global customFieldContainer iCIMS_Forms_ListEditorField iCIMS_Forms_Qnull iCIMS_Forms_RequiredField form-control dropdown-hide",
+      "aria-label": "Once you have completed your review, please select “I agree” below, confirming that you have read and understand the Mutual Arbitration Agreement and agree to be bound by the same.",
+      "list": "lists.customfields_lists",
+      "type": "2101",
+      "onchange": "pageDirtyFlag=true;if (this.options[this.selectedIndex].value == -1) { return addItemToSelectFieldNLevelList(this); }else{ this.prevIndex = this.selectedIndex; } ",
+      "i_required": "true",
+      "icimsdropdown-enabled": "1",
+      "icimsdropdown-ajax": "1",
+      "icimsdropdown-search": "0",
+      "icimsdropdown-selected": "42500",
+      "hash": "1d31638928248dfd3c237912108e6b5adf39faacbc0df43821a52f4610b74019"
+    },
+    "label": "tAndC"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "text",
+      "class": "dropdown-search dropdown-invisible",
+      "autocomplete": "off",
+      "placeholder": "— Type to Search —",
+      "title": "— Type to Search —",
+      "aria-label": "— Type to Search —",
+      "role": "combobox",
+      "aria-hidden": "true",
+      "style": "width: 315px;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "submit",
+      "id": "cp_form_save_i",
+      "name": "save",
+      "class": "iCIMS_SecondaryButton",
+      "value": "Finish Later",
+      "onclick": "pageDirtyFlag=false;icimsSaveBtnPressed=true;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "submit",
+      "id": "cp_form_submit_i",
+      "class": "iCIMS_PrimaryButton",
+      "name": "profileButton",
+      "value": "Update Profile",
+      "onclick": "pageDirtyFlag=false;"
+    },
+    "label": "unknown"
+  },
+  {
+    "tag": "input",
+    "attributes": {
+      "type": "button",
+      "onclick": "keepMeAlive();",
+      "id": "keepMeAliveButton",
+      "class": "iCIMS_Button iCIMS_PrimaryButton",
+      "value": "Keep me logged in"
+    },
+    "label": "unknown"
+  }
+]

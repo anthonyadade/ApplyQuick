@@ -1391,7 +1391,7 @@
       "aria-required": "true",
       "class": "css-oo35ly"
     },
-    "label": "T&C"
+    "label": "tAndC"
   },
   {
     "tag": "input",
@@ -3080,7 +3080,7 @@
       "aria-required": "true",
       "class": "css-10spxif"
     },
-    "label": "T&C"
+    "label": "tAndC"
   },
   {
     "tag": "input",
@@ -3132,7 +3132,7 @@
       "aria-required": "true",
       "aria-describedby": "icims_accept_gdpr_desc"
     },
-    "label": "T&C"
+    "label": "tAndC"
   },
   {
     "tag": "input",
@@ -3169,7 +3169,7 @@
       "aria-required": "true",
       "aria-describedby": "icims_accept_gdpr_desc"
     },
-    "label": "T&C"
+    "label": "tAndC"
   },
   {
     "tag": "input",
@@ -3409,7 +3409,7 @@
       "icimsdropdown-selected": "31637",
       "hash": "12de3e5c4880cb5ac530689d93eb0154d063b674d8582a1bb0f7b0bd90c81914"
     },
-    "label": "T&C"
+    "label": "tAndC"
   },
   {
     "tag": "select",
@@ -4321,7 +4321,7 @@
       "icimsdropdown-selected": "42500",
       "hash": "1d31638928248dfd3c237912108e6b5adf39faacbc0df43821a52f4610b74019"
     },
-    "label": "T&C"
+    "label": "tAndC"
   },
   {
     "tag": "input",

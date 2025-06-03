@@ -2,3 +2,4 @@ netstat -ano | findstr :3000
 tskill typeyourPIDhere 
 https://job-boards.greenhouse.io/simplifyjobsintegrationsandbox/jobs/5851707003?utm_source=Simplify&gh_src=Simplify
 thank you to Simplify for the link
+uvicorn main:app --reload --port 8001
